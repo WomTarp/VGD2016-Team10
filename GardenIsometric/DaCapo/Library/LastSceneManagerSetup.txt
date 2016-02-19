@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/GardenPlatformLevel.unity
+- path: Assets/UpperHallway.unity
   isLoaded: 1
   isActive: 1

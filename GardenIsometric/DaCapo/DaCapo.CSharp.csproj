@@ -68,8 +68,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts Personal\PlatformMove.cs" />
+    <Compile Include="Assets\Scripts Personal\StairsJump.cs" />
+    <Compile Include="Assets\Scripts Personal\cameraPanRight.cs" />
     <Compile Include="Assets\Scripts Personal\hideText.cs" />
     <Compile Include="Assets\Scripts Personal\move.cs" />
+    <Compile Include="Assets\Scripts Personal\notes_pickup.cs" />
     <Compile Include="Assets\Scripts Personal\textbubble.cs" />
   </ItemGroup>
   <ItemGroup>

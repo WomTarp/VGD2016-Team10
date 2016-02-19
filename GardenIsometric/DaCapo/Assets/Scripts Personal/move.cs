@@ -11,8 +11,7 @@ public class move : MonoBehaviour {
 
     void Start()
     {
-    }
-
+    }    
 
     void FixedUpdate()
     {
