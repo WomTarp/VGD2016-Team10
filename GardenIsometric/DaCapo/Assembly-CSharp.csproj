@@ -45,8 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts Personal\cameraPanRight.cs" />
      <Compile Include="Assets\Scripts Personal\hideText.cs" />
      <Compile Include="Assets\Scripts Personal\move.cs" />
+     <Compile Include="Assets\Scripts Personal\notes_pickup.cs" />
      <Compile Include="Assets\Scripts Personal\textbubble.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
