@@ -184,10 +184,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1125883565}
-  damping: 1
-  lookAheadFactor: 3
-  lookAheadReturnSpeed: 0.5
-  lookAheadMoveThreshold: 0.1
+  damping: 0
+  lookAheadFactor: 0
+  lookAheadReturnSpeed: 0
+  lookAheadMoveThreshold: 0
 --- !u!1 &1125883563
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,6 +200,7 @@ GameObject:
   - 50: {fileID: 1125883568}
   - 61: {fileID: 1125883566}
   - 114: {fileID: 1125883567}
+  - 95: {fileID: 1125883569}
   m_Layer: 0
   m_Name: char_girl
   m_TagString: Untagged
@@ -233,7 +234,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4210d997d1cb28541b63db6922cc6e84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 341bc662be09eb34991d33482bc7493a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -244,8 +245,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125883563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5906394, y: -2.319195, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.12, y: -0.02, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -260,9 +261,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.8471818}
+  m_Offset: {x: 0.0059051514, y: -0.36887297}
   serializedVersion: 2
-  m_Size: {x: 1.27, y: 0.22563648}
+  m_Size: {x: 0.5495841, y: 0.2610673}
 --- !u!114 &1125883567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +279,7 @@ MonoBehaviour:
   moveDown: 274
   moveLeft: 276
   moveRight: 275
+  speed: 5
 --- !u!50 &1125883568
 Rigidbody2D:
   serializedVersion: 2
@@ -295,6 +297,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1125883569
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125883563}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 007cc79d6f311434faf46e9c5a1b95cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1218611269
 GameObject:
   m_ObjectHideFlags: 0
