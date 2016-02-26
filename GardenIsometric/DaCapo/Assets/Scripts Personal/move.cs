@@ -1,31 +1,40 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class move : MonoBehaviour {
+public class Move : MonoBehaviour
+{
+    private Rigidbody2D myRigidBody;
 
-    public KeyCode moveUp;
-    public KeyCode moveDown;
-    public KeyCode moveLeft;
-    public KeyCode moveRight;
+    private KeyCode moveUp = KeyCode.UpArrow;
+    private KeyCode moveDown = KeyCode.DownArrow;
+    private KeyCode moveLeft = KeyCode.LeftArrow;
+    private KeyCode moveRight = KeyCode.RightArrow;
     public int speed;
+
+    public bool canMove;
 
     void Start()
     {
-    }    
+        myRigidBody = GetComponent<Rigidbody2D>();
+    }
 
     void FixedUpdate()
     {
-          if (Input.GetKey(moveUp))
-                GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed);
-          else if (Input.GetKey(moveDown))
-                GetComponent<Rigidbody2D>().velocity = new Vector2(0, -speed);
-          else if (Input.GetKey(moveLeft))
-                GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, 0);
-          else if (Input.GetKey(moveRight))
-                GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
-          else 
-                GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        if (!canMove)
+        {
+            myRigidBody.velocity = new Vector2(0, 0);
+            return;
+        }
+
+        if (Input.GetKey(moveUp))
+            myRigidBody.velocity = new Vector2(0, speed);
+        else if (Input.GetKey(moveDown))
+            myRigidBody.velocity = new Vector2(0, -speed);
+        else if (Input.GetKey(moveLeft))
+            myRigidBody.velocity = new Vector2(-speed, 0);
+        else if (Input.GetKey(moveRight))
+            myRigidBody.velocity = new Vector2(speed, 0);
+        else
+            myRigidBody.velocity = new Vector2(0, 0);
     }
 }
-
-

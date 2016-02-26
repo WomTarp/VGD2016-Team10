@@ -11,11 +11,11 @@ GameObject:
   - 212: {fileID: 21296594}
   - 50: {fileID: 5048724}
   - 61: {fileID: 6156074}
-  - 114: {fileID: 11424700}
+  - 114: {fileID: 11435502}
   - 95: {fileID: 9590778}
   m_Layer: 0
   m_Name: MainCharacter
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,7 +80,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11424700
+--- !u!114 &11435502
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -91,11 +91,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ade58e8bdbba5e746bf0493ec9e48ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveUp: 273
-  moveDown: 274
-  moveLeft: 276
-  moveRight: 275
   speed: 5
+  canMove: 1
 --- !u!212 &21296594
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -136,6 +133,26 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: moveUp
+      value: 273
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: moveDown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: canMove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: Girl
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
