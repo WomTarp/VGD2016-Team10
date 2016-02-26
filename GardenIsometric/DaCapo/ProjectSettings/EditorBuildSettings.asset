@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GardenPlatformLevel.unity
+    path: Assets/Scenes/GardenPlatformLevel.unity
   - enabled: 1
-    path: Assets/MainRoom.unity
+    path: Assets/Scenes/MainRoom.unity
   - enabled: 1
-    path: Assets/UpperHallway.unity
+    path: Assets/Scenes/UpperHallway.unity

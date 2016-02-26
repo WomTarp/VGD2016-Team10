@@ -12,13 +12,13 @@ public class Teleport : MonoBehaviour {
         {
             player.canMove = false;
             other.transform.position = destination.position;
-            StartCoroutine(wait());
-            player.canMove = true;
+            StartCoroutine(wait(other));
         }
     }
 
-    IEnumerator wait()
+    IEnumerator wait(Collider2D other)
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.3f);
+        player.canMove = true;
     }
 }
