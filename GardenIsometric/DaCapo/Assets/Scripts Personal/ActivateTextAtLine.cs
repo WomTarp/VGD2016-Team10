@@ -7,9 +7,11 @@ public class ActivateTextAtLine : MonoBehaviour {
 
     public int startLine;
     public int endLine;
+    public int endLine2;
 
     public TextBoxManager tBox;
 
+    public bool continueText;
     public bool destroyWhenActivated;
     public bool requiredButtonPress;
     private bool waitForPress;
@@ -25,7 +27,8 @@ public class ActivateTextAtLine : MonoBehaviour {
         {
             tBox.ReloadScripts(theText);
             tBox.currentLine = startLine;
-            tBox.endAtLine = endLine;
+            if (continueText) tBox.endAtLine = endLine2;
+            else tBox.endAtLine = endLine;
             tBox.EnableTextBox();
 
             if (destroyWhenActivated) Destroy(gameObject);
@@ -34,7 +37,7 @@ public class ActivateTextAtLine : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "Player")
+        if (other.name == "Girl")
         {
             if (requiredButtonPress)
             {
@@ -53,6 +56,6 @@ public class ActivateTextAtLine : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.name == "Player") waitForPress = false;
+        if (other.name == "Girl") waitForPress = false;
     }
 }

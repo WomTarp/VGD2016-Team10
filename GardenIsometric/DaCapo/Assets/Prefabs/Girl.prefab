@@ -13,6 +13,7 @@ GameObject:
   - 61: {fileID: 6156074}
   - 114: {fileID: 11435502}
   - 95: {fileID: 9590778}
+  - 114: {fileID: 11445694}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Untagged
@@ -93,6 +94,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   canMove: 1
+--- !u!114 &11445694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63de5f4ccbcde64e821aa627dc9f795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stick: 0
+  musicSheet1: 1
 --- !u!212 &21296594
 SpriteRenderer:
   m_ObjectHideFlags: 1

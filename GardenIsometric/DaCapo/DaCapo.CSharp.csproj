@@ -69,10 +69,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts Personal\ActivateTextAtLine.cs" />
+    <Compile Include="Assets\Scripts Personal\CheckItem.cs" />
     <Compile Include="Assets\Scripts Personal\GameManager.cs" />
+    <Compile Include="Assets\Scripts Personal\GetItem.cs" />
     <Compile Include="Assets\Scripts Personal\GoInside.cs" />
     <Compile Include="Assets\Scripts Personal\Move.cs" />
     <Compile Include="Assets\Scripts Personal\PlatformMove.cs" />
+    <Compile Include="Assets\Scripts Personal\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts Personal\Teleport.cs" />
     <Compile Include="Assets\Scripts Personal\TextBoxManager.cs" />
     <Compile Include="Assets\Scripts Personal\TextImporter.cs" />
@@ -83,6 +86,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Texts\Bush.txt" />
+    <None Include="Assets\Texts\Dog.txt" />
+    <None Include="Assets\Texts\Door.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
