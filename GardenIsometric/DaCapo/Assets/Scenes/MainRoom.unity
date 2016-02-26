@@ -197,11 +197,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.12
+      value: -4.7
       objectReference: {fileID: 0}
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: -3.04
       objectReference: {fileID: 0}
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -230,6 +230,10 @@ Prefab:
     - target: {fileID: 181392, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_Name
       value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 21296594, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1797012615
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}

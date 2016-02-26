@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts Personal\ActivateTextAtLine.cs" />
     <Compile Include="Assets\Scripts Personal\GameManager.cs" />
+    <Compile Include="Assets\Scripts Personal\GoInside.cs" />
     <Compile Include="Assets\Scripts Personal\Move.cs" />
     <Compile Include="Assets\Scripts Personal\PlatformMove.cs" />
     <Compile Include="Assets\Scripts Personal\Teleport.cs" />
