@@ -24,7 +24,7 @@ public class GetItem : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "Girl" && requiredButtonPress)
+        if (other.name == "MainCharacter" && requiredButtonPress)
         {
                 waitForPress = true;
                 return;

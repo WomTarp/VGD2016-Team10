@@ -8,7 +8,7 @@ public class Teleport : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "Girl")
+        if (other.name == "MainCharacter")
         {
             player.canMove = false;
             other.transform.position = destination.position;

@@ -16,7 +16,7 @@ private float speed = 2.0f;
 
     void OnTriggerEnter2D(Collider2D co)
     {
-        if (co.name == "MainCharacter")
+        if (co.name == "Girl")
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("GardenPlatformLevel");
         }

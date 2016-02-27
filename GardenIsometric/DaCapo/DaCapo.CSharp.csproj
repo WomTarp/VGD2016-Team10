@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts Personal\ActivateTextAtLine.cs" />
+    <Compile Include="Assets\Scripts Personal\CameraMovement.cs" />
     <Compile Include="Assets\Scripts Personal\CheckItem.cs" />
     <Compile Include="Assets\Scripts Personal\GameManager.cs" />
     <Compile Include="Assets\Scripts Personal\GetItem.cs" />
@@ -76,12 +77,14 @@
     <Compile Include="Assets\Scripts Personal\Move.cs" />
     <Compile Include="Assets\Scripts Personal\PlatformMove.cs" />
     <Compile Include="Assets\Scripts Personal\PlayerInventory.cs" />
+    <Compile Include="Assets\Scripts Personal\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts Personal\Teleport.cs" />
     <Compile Include="Assets\Scripts Personal\TextBoxManager.cs" />
     <Compile Include="Assets\Scripts Personal\TextImporter.cs" />
     <Compile Include="Assets\Scripts Personal\cameraPanRight.cs" />
     <Compile Include="Assets\Scripts Personal\hideText.cs" />
     <Compile Include="Assets\Scripts Personal\notes_pickup.cs" />
+    <Compile Include="Assets\Scripts Personal\playerAnimation.cs" />
     <Compile Include="Assets\Scripts Personal\textbubble.cs" />
   </ItemGroup>
   <ItemGroup>

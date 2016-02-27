@@ -28,7 +28,7 @@ public class GoInside : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "Girl" && requireButtonPress) 
+        if (other.name == "MainCharacter" && requireButtonPress) 
         {
             waitForPress = true;
             return;
@@ -37,6 +37,6 @@ public class GoInside : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.name == "Girl") waitForPress = false;
+        if (other.name == "MainCharacter") waitForPress = false;
     }
 }

@@ -37,7 +37,7 @@ public class ActivateTextAtLine : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "Girl")
+        if (other.name == "MainCharacter")
         {
             if (requiredButtonPress)
             {
@@ -56,6 +56,6 @@ public class ActivateTextAtLine : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.name == "Girl") waitForPress = false;
+        if (other.name == "MainCharacter") waitForPress = false;
     }
 }

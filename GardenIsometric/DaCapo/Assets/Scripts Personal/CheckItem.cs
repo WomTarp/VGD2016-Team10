@@ -29,7 +29,7 @@ public class CheckItem : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "Girl" && inv.stick && requiredButtonPress)
+        if (other.name == "MainCharacter" && inv.stick && requiredButtonPress)
         {
             waitForPress = true;
             return;
