@@ -15,7 +15,7 @@ public class GetItem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (waitForPress && Input.GetKeyDown(KeyCode.X))
+        if (waitForPress && Input.GetKeyDown(KeyCode.Z))
         {
             inv.stick = true;
             if (destroyWhenActivated) Destroy(gameObject);

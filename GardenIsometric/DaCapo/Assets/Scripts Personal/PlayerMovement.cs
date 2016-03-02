@@ -9,9 +9,17 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D playerBody;
     public bool canMove;
 
+    public Animator anim;
+
+    private KeyCode moveUp = KeyCode.UpArrow;
+    private KeyCode moveDown = KeyCode.DownArrow;
+    private KeyCode moveLeft = KeyCode.LeftArrow;
+    private KeyCode moveRight = KeyCode.RightArrow;
+
     void Start()
     {
         playerBody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -22,34 +30,60 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if ((Input.GetKey(KeyCode.D))
-         && !(Input.GetKey(KeyCode.W))
-         && !(Input.GetKey(KeyCode.A))
-         && !(Input.GetKey(KeyCode.S)))
+        if ((Input.GetKey(moveRight))
+         && !(Input.GetKey(moveUp))
+         && !(Input.GetKey(moveLeft))
+         && !(Input.GetKey(moveDown)))
         {
             playerBody.AddForce(Vector2.right * speed);
-
+            anim.SetBool("Right", true);
+            anim.SetBool("Left", false);
+            anim.SetBool("Up", false);
+            anim.SetBool("Down", false);
+            anim.SetBool("WalkRight", true);
         }
-        if ((Input.GetKey(KeyCode.A))
-         && !(Input.GetKey(KeyCode.W))
-         && !(Input.GetKey(KeyCode.D))
-         && !(Input.GetKey(KeyCode.S)))
+        else anim.SetBool("WalkRight", false);
+
+        if ((Input.GetKey(moveLeft))
+         && !(Input.GetKey(moveUp))
+         && !(Input.GetKey(moveDown))
+         && !(Input.GetKey(moveRight)))
         {
             playerBody.AddForce(Vector2.left * speed);
+            anim.SetBool("Left", true);
+            anim.SetBool("Right", false);
+            anim.SetBool("Up", false);
+            anim.SetBool("Down", false);
+            anim.SetBool("WalkLeft", true);
         }
-        if ((Input.GetKey(KeyCode.W))
-         && !(Input.GetKey(KeyCode.D))
-         && !(Input.GetKey(KeyCode.A))
-         && !(Input.GetKey(KeyCode.S)))
+        else anim.SetBool("WalkLeft", false);
+
+        if ((Input.GetKey(moveUp))
+         && !(Input.GetKey(moveDown))
+         && !(Input.GetKey(moveLeft))
+         && !(Input.GetKey(moveRight)))
         {
             playerBody.AddForce(Vector2.up * speed);
+            anim.SetBool("Up", true);
+            anim.SetBool("Down", false);
+            anim.SetBool("Left", false);
+            anim.SetBool("Right", false);
+            anim.SetBool("WalkUp", true);
         }
-        if ((Input.GetKey(KeyCode.S))
-         && !(Input.GetKey(KeyCode.W))
-         && !(Input.GetKey(KeyCode.A))
-         && !(Input.GetKey(KeyCode.D)))
+        else anim.SetBool("WalkUp", false);
+
+        if ((Input.GetKey(moveDown))
+         && !(Input.GetKey(moveUp))
+         && !(Input.GetKey(moveRight))
+         && !(Input.GetKey(moveLeft)))
         {
             playerBody.AddForce(Vector2.down * speed);
+            anim.SetBool("Down", true);
+            anim.SetBool("Left", false);
+            anim.SetBool("Up", false);
+            anim.SetBool("Right", false);
+            anim.SetBool("WalkDown", true);
         }
+        else anim.SetBool("WalkDown", false);
     }
 }

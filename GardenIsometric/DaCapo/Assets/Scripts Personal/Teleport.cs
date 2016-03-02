@@ -4,7 +4,7 @@ using System.Collections;
 public class Teleport : MonoBehaviour {
 
     public Transform destination;
-    public Move player;
+    public PlayerMovement player;
 
     void OnTriggerEnter2D(Collider2D other)
     {

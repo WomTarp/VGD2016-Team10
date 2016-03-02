@@ -20,7 +20,7 @@ public class CheckItem : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {        
-        if (Input.GetKeyDown(KeyCode.X) && waitForPress)
+        if (Input.GetKeyDown(KeyCode.Z) && waitForPress)
         {
             aBox.continueText = true;
             inv.musicSheet1 = true;

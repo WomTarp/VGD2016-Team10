@@ -14,7 +14,7 @@ public class TextBoxManager : MonoBehaviour {
     public int currentLine;
     public int endAtLine;
 
-    public Move player;
+    public PlayerMovement player;
 
     public bool isActive;
     public bool stopPlayerMovement;
@@ -22,7 +22,7 @@ public class TextBoxManager : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        player = FindObjectOfType<Move>();
+        player = FindObjectOfType<PlayerMovement>();
 
         if (textFile != null) textLines = (textFile.text.Split('\n'));
 
@@ -38,7 +38,7 @@ public class TextBoxManager : MonoBehaviour {
 
         if (currentLine <= endAtLine) theText.text = textLines[currentLine];
 
-        if (Input.GetKeyDown(KeyCode.Z)) currentLine++;
+        if (Input.GetKeyDown(KeyCode.X)) currentLine++;
 
         if (currentLine > endAtLine) DisableTextBox();
     }
