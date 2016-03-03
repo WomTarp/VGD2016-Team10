@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts Personal\GameManager.cs" />
     <Compile Include="Assets\Scripts Personal\GetItem.cs" />
     <Compile Include="Assets\Scripts Personal\GoInside.cs" />
+    <Compile Include="Assets\Scripts Personal\MenuScript.cs" />
     <Compile Include="Assets\Scripts Personal\PlatformMove.cs" />
     <Compile Include="Assets\Scripts Personal\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts Personal\PlayerMovement.cs" />
