@@ -5,13 +5,9 @@ public class cameraPanRight : MonoBehaviour
 {
 
 private float speed = 2.0f;
-    void Update()
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))        
-        {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(3, 0, 0);
-            //if (bool player = renderer.isVisible)
-        }           
+            GetComponent<Rigidbody2D>().velocity = new Vector3(3, 0, 0);               
     }
 
     void OnTriggerEnter2D(Collider2D co)

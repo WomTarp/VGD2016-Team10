@@ -45,12 +45,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts Personal\ActivateTextAtLine.cs" />
+     <Compile Include="Assets\Scripts Personal\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts Personal\CheckItem.cs" />
+     <Compile Include="Assets\Scripts Personal\DontTouchEdges.cs" />
+     <Compile Include="Assets\Scripts Personal\GameManager.cs" />
+     <Compile Include="Assets\Scripts Personal\GetItem.cs" />
+     <Compile Include="Assets\Scripts Personal\GoInside.cs" />
+     <Compile Include="Assets\Scripts Personal\MenuScript.cs" />
+     <Compile Include="Assets\Scripts Personal\PlatformMove.cs" />
+     <Compile Include="Assets\Scripts Personal\PlayerInventory.cs" />
+     <Compile Include="Assets\Scripts Personal\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts Personal\Teleport.cs" />
+     <Compile Include="Assets\Scripts Personal\TextBoxManager.cs" />
+     <Compile Include="Assets\Scripts Personal\TextImporter.cs" />
      <Compile Include="Assets\Scripts Personal\cameraPanRight.cs" />
      <Compile Include="Assets\Scripts Personal\hideText.cs" />
-     <Compile Include="Assets\Scripts Personal\move.cs" />
      <Compile Include="Assets\Scripts Personal\notes_pickup.cs" />
      <Compile Include="Assets\Scripts Personal\textbubble.cs" />
+     <None Include="Assets\Texts\Dog.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Texts\Door.txt" />
+     <None Include="Assets\Texts\Bush.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
