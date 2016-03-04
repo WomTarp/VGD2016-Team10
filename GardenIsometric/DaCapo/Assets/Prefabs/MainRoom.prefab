@@ -396,6 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
+  player: {fileID: 0}
 --- !u!212 &21276282
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts Personal\ActivateTextAtLine.cs" />
     <Compile Include="Assets\Scripts Personal\CameraMovement.cs" />
     <Compile Include="Assets\Scripts Personal\CheckItem.cs" />
+    <Compile Include="Assets\Scripts Personal\DontTouchEdges.cs" />
     <Compile Include="Assets\Scripts Personal\GameManager.cs" />
     <Compile Include="Assets\Scripts Personal\GetItem.cs" />
     <Compile Include="Assets\Scripts Personal\GoInside.cs" />
@@ -91,6 +92,7 @@
     <None Include="Assets\Texts\Bush.txt" />
     <None Include="Assets\Texts\Dog.txt" />
     <None Include="Assets\Texts\Door.txt" />
+    <None Include="Assets\Texts\Front Gate.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

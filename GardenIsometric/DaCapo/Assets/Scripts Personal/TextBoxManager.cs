@@ -40,7 +40,7 @@ public class TextBoxManager : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.X)) currentLine++;
 
-        if (currentLine > endAtLine) DisableTextBox();
+        if (currentLine > endAtLine) { theText.text = "";  DisableTextBox(); }
     }
 
     public void EnableTextBox()

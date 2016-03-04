@@ -85,6 +85,65 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &112759705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 112759706}
+  - 61: {fileID: 112759708}
+  - 114: {fileID: 112759707}
+  m_Layer: 0
+  m_Name: UpStairs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112759706
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112759705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.3500004, y: -1.0699999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2105538532}
+  m_RootOrder: 1
+--- !u!114 &112759707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112759705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b5f6ccef8585347bf2d8d8b99d3c21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: 0
+  markers:
+  - {fileID: 1146869534}
+  - {fileID: 1165479236}
+  player: {fileID: 649763145}
+--- !u!61 &112759708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112759705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.017832756}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.7490177}
 --- !u!1 &526007719
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +295,9 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 649763145}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6147648, guid: 99c22d30ee1e8b545be4c4b4be1b3a0a, type: 2}
+    - {fileID: 11468280, guid: 99c22d30ee1e8b545be4c4b4be1b3a0a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 99c22d30ee1e8b545be4c4b4be1b3a0a, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1146869534 stripped
@@ -326,20 +387,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426762, guid: c631754c67e8c58469c46a3c379ac637, type: 2}
       propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 139028, guid: c631754c67e8c58469c46a3c379ac637, type: 2}
-      propertyPath: m_Name
-      value: Test Background 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11488348, guid: c631754c67e8c58469c46a3c379ac637, type: 2}
       propertyPath: destination
-      value: 
-      objectReference: {fileID: 1165479236}
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11488348, guid: c631754c67e8c58469c46a3c379ac637, type: 2}
       propertyPath: player
       value: 
       objectReference: {fileID: 649763145}
+    - target: {fileID: 139028, guid: c631754c67e8c58469c46a3c379ac637, type: 2}
+      propertyPath: m_Name
+      value: MainRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 11488348, guid: c631754c67e8c58469c46a3c379ac637, type: 2}
+      propertyPath: markers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1146869534}
+    - target: {fileID: 11488348, guid: c631754c67e8c58469c46a3c379ac637, type: 2}
+      propertyPath: markers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1165479236}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c631754c67e8c58469c46a3c379ac637, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &2105538532 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 434812, guid: 99c22d30ee1e8b545be4c4b4be1b3a0a, type: 2}
+  m_PrefabInternal: {fileID: 991385439}

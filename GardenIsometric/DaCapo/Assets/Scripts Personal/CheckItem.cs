@@ -22,7 +22,6 @@ public class CheckItem : MonoBehaviour {
     {        
         if (Input.GetKeyDown(KeyCode.Z) && waitForPress)
         {
-            aBox.continueText = true;
             inv.musicSheet1 = true;
         }
     }
@@ -31,6 +30,7 @@ public class CheckItem : MonoBehaviour {
     {
         if (other.name == "MainCharacter" && inv.stick && requiredButtonPress)
         {
+            aBox.continueText = true;
             waitForPress = true;
             return;
         }

@@ -22,7 +22,7 @@ public class GoInside : MonoBehaviour {
         }
         if (waitForPress && Input.GetKeyDown(KeyCode.Z) && inv.musicSheet1)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(3);
         }
     }
 
