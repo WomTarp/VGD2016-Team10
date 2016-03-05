@@ -60,6 +60,9 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="LitJson">
+      <HintPath>Assets\InventoryPackage\Plugins\LitJson.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="DaCapo.CSharp.Plugins.csproj">
@@ -68,6 +71,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\InventoryPackage\Scripts\Inventory.cs" />
+    <Compile Include="Assets\InventoryPackage\Scripts\ItemData.cs" />
+    <Compile Include="Assets\InventoryPackage\Scripts\ItemDatabase.cs" />
+    <Compile Include="Assets\InventoryPackage\Scripts\SlotScript.cs" />
+    <Compile Include="Assets\InventoryPackage\Scripts\TooltipScript.cs" />
     <Compile Include="Assets\Scripts Personal\ActivateTextAtLine.cs" />
     <Compile Include="Assets\Scripts Personal\CameraMovement.cs" />
     <Compile Include="Assets\Scripts Personal\CheckItem.cs" />

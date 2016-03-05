@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "title": "Stick",
+    "description": "Excellent for throwing.",
+    "usable": true,
+    "slug": "stick"
+  },
+  {
+    "id": 1,
+    "title": "Sheet Scrap #1",
+    "description": "Crumpled scrap of sheet music. The notation is faded.",
+    "usable": false,
+    "slug": "sheet1"
+  }
+]
