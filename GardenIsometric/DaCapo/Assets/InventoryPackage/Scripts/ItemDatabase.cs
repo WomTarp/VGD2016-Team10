@@ -11,10 +11,8 @@ public class ItemDatabase : MonoBehaviour
 	
     void Start()
     {
-        itemData = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/StreamingAssets/Items.json"));
+        itemData = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/InventoryPackage/StreamingAssets/Items.json"));
         ConstructItemDatabase();
-
-        Debug.Log(FetchItemByID(0).Description);
     }
 
     public Item FetchItemByID(int id)
@@ -46,6 +44,7 @@ public class Item
     public bool Usable { get; set; }
     public string Slug { get; set; }
     public Sprite Sprite { get; set; }
+    public bool isInInventory;
 
     public Item(int id, string title, string description, bool usable, string slug)
     {
@@ -54,12 +53,12 @@ public class Item
         this.Description = description;
         this.Usable = usable;
         this.Slug = slug;
-        this.Sprite = Resources.Load<Sprite>("Sprites/" + slug); 
+        this.Sprite = Resources.Load<Sprite>("Sprites/" + slug);
+        this.isInInventory = false;
      }
 
     public Item()
     {
         this.ID = -1;
     }
-
 }

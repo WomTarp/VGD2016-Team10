@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private Rigidbody2D playerBody;
     public bool canMove;
+    public bool canInventory;
+    public bool canExamine;
 
     public Animator anim;
 
@@ -20,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
     {
         playerBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        canInventory = true;
+        canMove = true;
+        canExamine = true;
     }
 
     void Update()

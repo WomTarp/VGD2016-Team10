@@ -7,20 +7,22 @@ public class GoInside : MonoBehaviour {
     public bool requireButtonPress;
     private bool waitForPress;
     private bool flag;
-    public PlayerInventory inv;
-	// Use this for initialization
-	void Start () {
-        flag = true;
-	}
+    public Inventory inv;
+    public int itemCheckValue;
+    
+    void Start () {
+        flag = false;
+        inv = GameObject.Find("MainCharacter").GetComponentInChildren<Inventory>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        if (inv.musicSheet1 && flag)
+        if (flag)
         {
             DestroyObject(GetComponent<ActivateTextAtLine>());
             flag = false;
         }
-        if (waitForPress && Input.GetKeyDown(KeyCode.Z) && inv.musicSheet1)
+        if (waitForPress && Input.GetKeyDown(KeyCode.Z))
         {
             SceneManager.LoadScene(3);
         }
@@ -28,9 +30,10 @@ public class GoInside : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "MainCharacter" && requireButtonPress) 
+        if (other.name == "MainCharacter" && requireButtonPress && inv.CheckIfItemIsInInventory(itemCheckValue)) 
         {
             waitForPress = true;
+            flag = true;
             return;
         }
     }

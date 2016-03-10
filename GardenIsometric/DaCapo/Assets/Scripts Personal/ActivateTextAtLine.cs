@@ -25,13 +25,14 @@ public class ActivateTextAtLine : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if (waitForPress && Input.GetKeyDown(KeyCode.Z) && !textBoxActivated)
+	    if (waitForPress && Input.GetKeyDown(KeyCode.Z) && !textBoxActivated && tBox.player.canExamine)
         {
             textBoxActivated = true;
             tBox.player.anim.SetBool("WalkRight", false);
             tBox.player.anim.SetBool("WalkUp", false);
             tBox.player.anim.SetBool("WalkDown", false);
             tBox.player.anim.SetBool("WalkLeft", false);
+            tBox.player.canInventory = false;
             tBox.ReloadScripts(theText);
             tBox.currentLine = startLine;
             if (continueText) tBox.endAtLine = endLine2;
@@ -40,7 +41,11 @@ public class ActivateTextAtLine : MonoBehaviour {
 
             if (destroyWhenActivated) Destroy(gameObject);
         }
-        if (tBox.currentLine > tBox.endAtLine) textBoxActivated = false;
+        if (tBox.currentLine > tBox.endAtLine)
+        {
+            textBoxActivated = false;
+            tBox.player.canInventory = true;
+        }
 	}
 
     void OnTriggerEnter2D(Collider2D other)

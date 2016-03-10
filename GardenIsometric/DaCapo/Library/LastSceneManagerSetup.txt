@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/InventoryPackage/inventory.unity
+- path: Assets/Scenes/GardenLevel.unity
   isLoaded: 1
   isActive: 1

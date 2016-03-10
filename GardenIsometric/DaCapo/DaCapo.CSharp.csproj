@@ -77,6 +77,7 @@
     <Compile Include="Assets\InventoryPackage\Scripts\SlotScript.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\TooltipScript.cs" />
     <Compile Include="Assets\Scripts Personal\ActivateTextAtLine.cs" />
+    <Compile Include="Assets\Scripts Personal\CallInventory.cs" />
     <Compile Include="Assets\Scripts Personal\CameraMovement.cs" />
     <Compile Include="Assets\Scripts Personal\CheckItem.cs" />
     <Compile Include="Assets\Scripts Personal\DontTouchEdges.cs" />
@@ -85,7 +86,6 @@
     <Compile Include="Assets\Scripts Personal\GoInside.cs" />
     <Compile Include="Assets\Scripts Personal\MenuScript.cs" />
     <Compile Include="Assets\Scripts Personal\PlatformMove.cs" />
-    <Compile Include="Assets\Scripts Personal\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts Personal\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts Personal\Teleport.cs" />
     <Compile Include="Assets\Scripts Personal\TextBoxManager.cs" />

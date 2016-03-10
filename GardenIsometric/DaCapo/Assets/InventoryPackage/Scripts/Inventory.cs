@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
     {
         database = GetComponent<ItemDatabase>();
 
-        slotAmount = 12;
+        slotAmount = 9;
         inventoryPanel = GameObject.Find("InventoryPanel");
         slotPanel = inventoryPanel.transform.FindChild("SlotPanel").gameObject;
         for (int i = 0; i < slotAmount; i++)
@@ -31,13 +31,16 @@ public class Inventory : MonoBehaviour
             slots[i].transform.SetParent(slotPanel.transform);
         }
 
-        AddItem(0);
-        AddItem(1);
+        //AddItem(0);
+        //AddItem(1);
+        inventoryPanel.SetActive(false);
     }
 
     public void AddItem(int id)
     {
+        inventoryPanel.SetActive(true);
         Item itemToAdd = database.FetchItemByID(id);
+        itemToAdd.isInInventory = true;
         for (int i = 0; i < items.Count; i++)
         {
             if (items[i].ID == -1)
@@ -53,14 +56,15 @@ public class Inventory : MonoBehaviour
                 break;
             }
         }
+        inventoryPanel.SetActive(false);
     }
 
-    bool CheckIfItemIsInInventory(Item item)
+    public bool CheckIfItemIsInInventory(int itemIndex)
     {
-        for (int i = 0; i < items.Count; i++)
+        Item item = database.FetchItemByID(itemIndex);
+        if (item.isInInventory)
         {
-            if (items[i].ID == item.ID)
-                return true;
+            return true;
         }
         return false;
     }
