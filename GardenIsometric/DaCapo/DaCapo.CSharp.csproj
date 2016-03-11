@@ -98,6 +98,7 @@
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Texts\Bush.txt" />
+    <None Include="Assets\Texts\Descriptions.txt" />
     <None Include="Assets\Texts\Dog.txt" />
     <None Include="Assets\Texts\Door.txt" />
     <None Include="Assets\Texts\Front Gate.txt" />

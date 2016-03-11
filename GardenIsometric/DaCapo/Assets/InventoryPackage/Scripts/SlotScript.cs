@@ -27,7 +27,8 @@ public class SlotScript : MonoBehaviour, IDropHandler
             Transform item = this.transform.GetChild(0);
             item.GetComponent<ItemData>().slot = droppedItem.slot;
             item.transform.SetParent(inv.slots[droppedItem.slot].transform);
-            item.transform.position = inv.slots[droppedItem.slot].transform.position;
+            item.transform.localPosition = new Vector2(15.5f, -18.5f);
+            //item.transform.position = inv.slots[droppedItem.slot].transform.position;
 
             droppedItem.slot = id;
             droppedItem.transform.SetParent(this.transform);

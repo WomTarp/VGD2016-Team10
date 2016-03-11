@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        anim.SetBool("Up", true);
         canInventory = true;
         canMove = true;
         canExamine = true;

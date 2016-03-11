@@ -44,3 +44,12 @@ TagManager:
   - name: Girl
     uniqueID: 2497954681
     locked: 0
+  - name: Background
+    uniqueID: 4254006835
+    locked: 0
+  - name: Character
+    uniqueID: 2807709625
+    locked: 0
+  - name: Item
+    uniqueID: 1959863465
+    locked: 0

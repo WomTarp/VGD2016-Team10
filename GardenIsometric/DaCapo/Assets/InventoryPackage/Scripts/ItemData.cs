@@ -42,7 +42,8 @@ public class ItemData : MonoBehaviour, IBeginDragHandler ,IDragHandler, IEndDrag
     public void OnEndDrag(PointerEventData eventData)
     {
         this.transform.SetParent(inv.slots[slot].transform);
-        this.transform.position = inv.slots[slot].transform.position;
+        this.transform.localPosition = new Vector2(15.5f, -18.5f);
+        //this.transform.position = inv.slots[slot].transform.position;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 

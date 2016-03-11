@@ -31,14 +31,13 @@ public class Inventory : MonoBehaviour
             slots[i].transform.SetParent(slotPanel.transform);
         }
 
-        //AddItem(0);
-        //AddItem(1);
-        inventoryPanel.SetActive(false);
+        //inventoryPanel.SetActive(false);
+        //inventoryPanel.GetComponent<CanvasGroup>().alpha = 0;
     }
 
     public void AddItem(int id)
     {
-        inventoryPanel.SetActive(true);
+        //inventoryPanel.SetActive(true);
         Item itemToAdd = database.FetchItemByID(id);
         itemToAdd.isInInventory = true;
         for (int i = 0; i < items.Count; i++)
@@ -50,13 +49,13 @@ public class Inventory : MonoBehaviour
                 itemObj.GetComponent<ItemData>().item = itemToAdd;
                 itemObj.GetComponent<ItemData>().slot = i;
                 itemObj.transform.SetParent(slots[i].transform);
-                itemObj.transform.position = Vector2.zero;
+                itemObj.transform.localPosition = new Vector2(15.5f, -18.5f);
                 itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
                 itemObj.name = itemToAdd.Title;              
                 break;
             }
         }
-        inventoryPanel.SetActive(false);
+        //inventoryPanel.SetActive(false);
     }
 
     public bool CheckIfItemIsInInventory(int itemIndex)

@@ -1,0 +1,13 @@
+The door is locked.
+
+The dog seems like it wants to play.
+You throw the stick.
+The dog plays with the stick.
+You found a music piece.
+
+A strong iron gate.
+You sense a curious nature about the gate.
+The gate is locked by a mysterious force.
+
+There is a stick on the ground.
+You pick up the stick.

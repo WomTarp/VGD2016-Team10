@@ -39,7 +39,7 @@ public class ActivateTextAtLine : MonoBehaviour {
             else tBox.endAtLine = endLine;
             tBox.EnableTextBox();
 
-            if (destroyWhenActivated) Destroy(gameObject);
+            if (destroyWhenActivated && continueText) Destroy(gameObject);
         }
         if (tBox.currentLine > tBox.endAtLine)
         {

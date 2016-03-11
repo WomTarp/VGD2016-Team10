@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &115546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 484520}
+  - 114: {fileID: 11447004}
+  - 114: {fileID: 11499588}
+  - 114: {fileID: 11467202}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &181392
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,7 +31,7 @@ GameObject:
   - 61: {fileID: 6156074}
   - 95: {fileID: 9590778}
   - 114: {fileID: 11484602}
-  - 114: {fileID: 11445694}
+  - 114: {fileID: 11409216}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
@@ -30,8 +48,21 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.33, y: -2.52, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 484520}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &484520
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -115.24833, y: -53.99013, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_Children: []
+  m_Father: {fileID: 474352}
   m_RootOrder: 0
 --- !u!50 &5048724
 Rigidbody2D:
@@ -75,13 +106,13 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4dec535fad4a4ab4582d62486cb5f235, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11445694
+--- !u!114 &11409216
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -89,11 +120,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 181392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c63de5f4ccbcde64e821aa627dc9f795, type: 3}
+  m_Script: {fileID: 11500000, guid: 466cbbe0ee5f2e4408ea8f26e35c95db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stick: 0
-  musicSheet1: 0
+  inventoryPanel: {fileID: 0}
+--- !u!114 &11447004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48eb829275e84024aa8acb11a103f71e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11467202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2246e4384e5c8941bf1b02113160649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11484602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,9 +157,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94133ff79216f204fb148d8e5f24a096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 400
+  speed: 500
   canMove: 1
+  canInventory: 1
+  canExamine: 1
   anim: {fileID: 0}
+--- !u!114 &11499588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e04b3f256853d94a998b14490f99263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySlot: {fileID: 158960, guid: de9962a67d86d5c488cbf54a04eb47db, type: 2}
+  inventoryItem: {fileID: 129142, guid: 727e7f467f8b94d4d80d5304d01b555a, type: 2}
+  slots: []
 --- !u!212 &21296594
 SpriteRenderer:
   m_ObjectHideFlags: 1

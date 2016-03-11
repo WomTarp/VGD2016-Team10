@@ -677,7 +677,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: bbcc2658436694e4ca4eeb910f73cbb4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -727,7 +727,7 @@ MonoBehaviour:
   endLine: 1
   endLine2: 1
   tBox: {fileID: 987003680}
-  continueText: 0
+  continueText: 1
   destroyWhenActivated: 1
   requiredButtonPress: 1
 --- !u!1 &341049533
@@ -1227,7 +1227,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -1289,7 +1289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b684c448829918944b78cf33715bb32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyWhenActivated: 1
+  destroyWhenActivated: 0
   requiredButtonPress: 1
   getItem: 1
   itemCheckValue: 0
@@ -1314,7 +1314,7 @@ MonoBehaviour:
   endLine2: 3
   tBox: {fileID: 987003680}
   continueText: 0
-  destroyWhenActivated: 0
+  destroyWhenActivated: 1
   requiredButtonPress: 1
 --- !u!1 &1332338157
 GameObject:
@@ -1819,7 +1819,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11484602, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: canExamine
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11445694, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}

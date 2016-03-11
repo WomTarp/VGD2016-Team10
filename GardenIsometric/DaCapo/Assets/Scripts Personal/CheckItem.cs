@@ -27,7 +27,7 @@ public class CheckItem : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Z) && waitForPress && getItem)
         {
             inv.AddItem(itemGetValue);
-            if (destroyWhenActivated) Destroy(gameObject);
+            if (destroyWhenActivated) Destroy(gameObject.GetComponent<CheckItem>());
         }
     }
 
