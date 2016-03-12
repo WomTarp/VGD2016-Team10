@@ -38,7 +38,7 @@ public class ActivateTextAtLine : MonoBehaviour {
             if (continueText) tBox.endAtLine = endLine2;
             else tBox.endAtLine = endLine;
             tBox.EnableTextBox();
-
+            
             if (destroyWhenActivated && continueText) Destroy(gameObject);
         }
         if (tBox.currentLine > tBox.endAtLine)
@@ -50,6 +50,7 @@ public class ActivateTextAtLine : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (!GameObject.Find("Dog").GetComponent<DogMove>().addDescription && this.name == "DogMovePoint") { return;  }
         if (other.name == "MainCharacter")
         {
             if (requiredButtonPress)

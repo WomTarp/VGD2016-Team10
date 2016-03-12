@@ -24,9 +24,13 @@ public class CheckItem : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {        
-        if (Input.GetKeyDown(KeyCode.Z) && waitForPress && getItem)
+        if (Input.GetKeyDown(KeyCode.Z) && waitForPress)
         {
-            inv.AddItem(itemGetValue);
+            if (this.name == "DogTrigger")
+            {
+                GetComponentInParent<PolygonCollider2D>().isTrigger = true;
+                GetComponentInParent<DogMove>().canMove = true;
+            }
             if (destroyWhenActivated) Destroy(gameObject.GetComponent<CheckItem>());
         }
     }

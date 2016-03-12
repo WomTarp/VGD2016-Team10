@@ -46,8 +46,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.33, y: -2.52, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalPosition: {x: 0.11, y: -0.86, z: 0}
+  m_LocalScale: {x: 1.696248, y: 1.5894535, z: 1}
   m_Children:
   - {fileID: 484520}
   m_Father: {fileID: 0}
@@ -92,9 +92,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.0059051514, y: -0.36887297}
+  m_Offset: {x: -0.014669098, y: -0.36887297}
   serializedVersion: 2
-  m_Size: {x: 0.5495841, y: 0.2610673}
+  m_Size: {x: 0.28572923, y: 0.26106727}
 --- !u!95 &9590778
 Animator:
   serializedVersion: 3
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94133ff79216f204fb148d8e5f24a096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 500
+  speed: 350
   canMove: 1
   canInventory: 1
   canExamine: 1
@@ -200,8 +200,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: -1487257671
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 65fb1b9b7dca51f4da31a4dc08cc0d71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
