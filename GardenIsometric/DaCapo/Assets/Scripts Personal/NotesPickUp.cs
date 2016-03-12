@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class notes_pickup : MonoBehaviour {
+public class NotesPickUp : MonoBehaviour {
 
     public AudioSource sound1;
   
 
     void OnTriggerEnter2D(Collider2D co)
     {
-        if (co.name == "MainCharacter")
+        if (co.name == "PlatformGirl")
         {
             sound1.Play();
             gameObject.SetActive(false);
