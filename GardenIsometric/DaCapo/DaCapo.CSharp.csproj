@@ -65,12 +65,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="DaCapo.CSharp.Plugins.csproj">
-      <Project>{D2A205FC-AC33-A0EA-14FB-415C5FCBB57C}</Project>
-      <Name>DaCapo.CSharp.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\InventoryPackage\Scripts\Inventory.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\ItemData.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\ItemDatabase.cs" />
@@ -82,10 +76,12 @@
     <Compile Include="Assets\Scripts Personal\CheckItem.cs" />
     <Compile Include="Assets\Scripts Personal\DogMove.cs" />
     <Compile Include="Assets\Scripts Personal\DontTouchEdges.cs" />
+    <Compile Include="Assets\Scripts Personal\Fading.cs" />
     <Compile Include="Assets\Scripts Personal\GameManager.cs" />
     <Compile Include="Assets\Scripts Personal\GetItem.cs" />
     <Compile Include="Assets\Scripts Personal\GoInside.cs" />
     <Compile Include="Assets\Scripts Personal\MenuScript.cs" />
+    <Compile Include="Assets\Scripts Personal\PickUpFade.cs" />
     <Compile Include="Assets\Scripts Personal\PlatformMove.cs" />
     <Compile Include="Assets\Scripts Personal\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts Personal\Teleport.cs" />
@@ -97,7 +93,6 @@
     <Compile Include="Assets\Scripts Personal\textbubble.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Texts\Bush.txt" />
     <None Include="Assets\Texts\Descriptions.txt" />
     <None Include="Assets\Texts\Dog.txt" />

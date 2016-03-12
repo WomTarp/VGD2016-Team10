@@ -1,11 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaCapo.CSharp.Plugins", "DaCapo.CSharp.Plugins.csproj", "{D2A205FC-AC33-A0EA-14FB-415C5FCBB57C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaCapo.CSharp", "DaCapo.CSharp.csproj", "{F05BB39B-F0A6-75BC-F21A-2D3878070EB2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaCapo.CSharp.Editor", "DaCapo.CSharp.Editor.csproj", "{DA49A311-EAAE-80C5-02EA-F4D0601CB248}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,18 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D2A205FC-AC33-A0EA-14FB-415C5FCBB57C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2A205FC-AC33-A0EA-14FB-415C5FCBB57C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2A205FC-AC33-A0EA-14FB-415C5FCBB57C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2A205FC-AC33-A0EA-14FB-415C5FCBB57C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F05BB39B-F0A6-75BC-F21A-2D3878070EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F05BB39B-F0A6-75BC-F21A-2D3878070EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F05BB39B-F0A6-75BC-F21A-2D3878070EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F05BB39B-F0A6-75BC-F21A-2D3878070EB2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA49A311-EAAE-80C5-02EA-F4D0601CB248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA49A311-EAAE-80C5-02EA-F4D0601CB248}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA49A311-EAAE-80C5-02EA-F4D0601CB248}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA49A311-EAAE-80C5-02EA-F4D0601CB248}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,6 +7,9 @@ public class GetItem : MonoBehaviour {
     public bool requiredButtonPress;
     private bool waitForPress;
     public int itemGetValue;
+    public bool pickUpChangesScene;
+    public bool doChangeScene;
+    public int sceneToChange;
 
     public Inventory inv;
     // Use this for initialization
@@ -19,7 +22,8 @@ public class GetItem : MonoBehaviour {
         if (waitForPress && Input.GetKeyDown(KeyCode.Z))
         {
             inv.AddItem(itemGetValue);
-            if (destroyWhenActivated) Destroy(gameObject);
+            if (pickUpChangesScene) doChangeScene = true; 
+            if (destroyWhenActivated) gameObject.SetActive(false);
         }
     }
 

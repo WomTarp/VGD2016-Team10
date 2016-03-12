@@ -16,6 +16,7 @@ public class ActivateTextAtLine : MonoBehaviour {
     public bool requiredButtonPress;
     private bool waitForPress;
     private bool textBoxActivated;
+    private bool discontinueText;
 
 	// Use this for initialization
 	void Start () {
@@ -25,7 +26,7 @@ public class ActivateTextAtLine : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if (waitForPress && Input.GetKeyDown(KeyCode.Z) && !textBoxActivated && tBox.player.canExamine)
+	    if (waitForPress && Input.GetKeyDown(KeyCode.Z) && !textBoxActivated && tBox.player.canExamine && !discontinueText)
         {
             textBoxActivated = true;
             tBox.player.anim.SetBool("WalkRight", false);
@@ -33,13 +34,14 @@ public class ActivateTextAtLine : MonoBehaviour {
             tBox.player.anim.SetBool("WalkDown", false);
             tBox.player.anim.SetBool("WalkLeft", false);
             tBox.player.canInventory = false;
+            tBox.finishedText = false;
             tBox.ReloadScripts(theText);
             tBox.currentLine = startLine;
             if (continueText) tBox.endAtLine = endLine2;
             else tBox.endAtLine = endLine;
             tBox.EnableTextBox();
             
-            if (destroyWhenActivated && continueText) Destroy(gameObject);
+            if (destroyWhenActivated && continueText) discontinueText = true;
         }
         if (tBox.currentLine > tBox.endAtLine)
         {
@@ -64,7 +66,7 @@ public class ActivateTextAtLine : MonoBehaviour {
             tBox.endAtLine = endLine;
             tBox.EnableTextBox();
 
-            if (destroyWhenActivated) Destroy(gameObject);
+            if (destroyWhenActivated) gameObject.SetActive(false);
         }
     }
 

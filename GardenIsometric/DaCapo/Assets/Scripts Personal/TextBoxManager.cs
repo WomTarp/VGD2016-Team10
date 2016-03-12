@@ -18,6 +18,7 @@ public class TextBoxManager : MonoBehaviour {
 
     public bool isActive;
     public bool stopPlayerMovement;
+    public bool finishedText;
 
     // Use this for initialization
     void Start()
@@ -36,11 +37,11 @@ public class TextBoxManager : MonoBehaviour {
     {
         if (!isActive) return;
 
-        if (currentLine <= endAtLine) theText.text = textLines[currentLine];
+        if (currentLine <= endAtLine) { theText.text = textLines[currentLine]; finishedText = false; }
 
         if (Input.GetKeyDown(KeyCode.X)) currentLine++;
 
-        if (currentLine > endAtLine) { theText.text = "";  DisableTextBox(); }
+        if (currentLine > endAtLine) { theText.text = "";  finishedText = true; DisableTextBox(); }
     }
 
     public void EnableTextBox()

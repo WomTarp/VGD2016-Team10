@@ -92,10 +92,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="DaCapo.CSharp.Plugins.csproj">
-      <Project>{D2A205FC-AC33-A0EA-14FB-415C5FCBB57C}</Project>
-      <Name>DaCapo.CSharp.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="DaCapo.CSharp.csproj">
       <Project>{F05BB39B-F0A6-75BC-F21A-2D3878070EB2}</Project>
       <Name>DaCapo.CSharp</Name>
@@ -105,7 +101,6 @@
     <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Texts\Bush.txt" />
     <None Include="Assets\Texts\Descriptions.txt" />
     <None Include="Assets\Texts\Dog.txt" />
