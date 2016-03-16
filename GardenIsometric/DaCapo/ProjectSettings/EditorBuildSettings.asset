@@ -19,3 +19,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Exterior.unity
   - enabled: 1
     path: Assets/Scenes/Credits.unity
+  - enabled: 1
+    path: Assets/VideoPackage/Video.unity
+  - enabled: 1
+    path: Assets/DialoguePackage/Dialogue#1.unity
