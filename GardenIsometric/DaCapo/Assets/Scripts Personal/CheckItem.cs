@@ -9,6 +9,8 @@ public class CheckItem : MonoBehaviour {
     public bool getItem;
     public int itemCheckValue;
     public int itemGetValue;
+    public bool removeItem;
+    private bool checkFinished;
 
     public TextBoxManager tBox;
     public ActivateTextAtLine aBox;
@@ -19,6 +21,7 @@ public class CheckItem : MonoBehaviour {
     {
         tBox = FindObjectOfType<TextBoxManager>();
         inv = GameObject.Find("MainCharacter").GetComponentInChildren<Inventory>();
+        checkFinished = false;
     }
 
     // Update is called once per frame
@@ -31,23 +34,23 @@ public class CheckItem : MonoBehaviour {
                 GetComponentInParent<PolygonCollider2D>().isTrigger = true;
                 GetComponentInParent<DogMove>().canMove = true;
             }
+            if (removeItem) { inv.removeItem(itemCheckValue); checkFinished = true; }
             if (destroyWhenActivated) Destroy(gameObject.GetComponent<CheckItem>());
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (checkFinished) return;
         if (other.name == "MainCharacter" && inv.CheckIfItemIsInInventory(itemCheckValue) && requiredButtonPress)
         {
             aBox.continueText = true;
             waitForPress = true;
-            return;
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
         waitForPress = false;
-        return;
     }
 }
