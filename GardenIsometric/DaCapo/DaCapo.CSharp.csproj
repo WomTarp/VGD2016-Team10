@@ -65,6 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DialoguePackage\FakeDialogueScript.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\Inventory.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\ItemData.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\ItemDatabase.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Assets\Scripts Personal\changeScene.cs" />
     <Compile Include="Assets\Scripts Personal\hideText.cs" />
     <Compile Include="Assets\Scripts Personal\textbubble.cs" />
+    <Compile Include="Assets\VideoPackage\PlayVideo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Texts\Bush.txt" />
