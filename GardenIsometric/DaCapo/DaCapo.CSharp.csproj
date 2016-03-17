@@ -94,6 +94,15 @@
     <Compile Include="Assets\VideoPackage\PlayVideo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\DialoguePackage\DialogueLines\line1.txt" />
+    <None Include="Assets\DialoguePackage\DialogueLines\line2.txt" />
+    <None Include="Assets\DialoguePackage\DialogueLines\line3.txt" />
+    <None Include="Assets\DialoguePackage\DialogueLines\line4.txt" />
+    <None Include="Assets\DialoguePackage\DialogueLines\line5.txt" />
+    <None Include="Assets\DialoguePackage\DialogueLines\line6.txt" />
+    <None Include="Assets\DialoguePackage\DialogueLines\line7.txt" />
+    <None Include="Assets\DialoguePackage\DialogueLines\line8.txt" />
+    <None Include="Assets\DialoguePackage\DialogueLines\line9.txt" />
     <None Include="Assets\Texts\Bush.txt" />
     <None Include="Assets\Texts\Descriptions.txt" />
     <None Include="Assets\Texts\Dog.txt" />
