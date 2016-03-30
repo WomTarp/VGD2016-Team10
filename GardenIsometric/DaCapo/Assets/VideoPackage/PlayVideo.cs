@@ -8,15 +8,15 @@ using UnityEngine.SceneManagement;
 public class PlayVideo : MonoBehaviour
 {
     public MovieTexture movie;
-    private AudioSource audio1;
+    //private AudioSource audio1;
 
     // Use this for initialization
     public void Start()
     {
 
         GetComponent<RawImage>().texture = movie as MovieTexture;
-        audio1 = GetComponent<AudioSource>();
-        audio1.clip = movie.audioClip;
+        //audio1 = GetComponent<AudioSource>();
+        //audio1.clip = movie.audioClip;
         if (!movie.isPlaying)
         {
             // Play clip

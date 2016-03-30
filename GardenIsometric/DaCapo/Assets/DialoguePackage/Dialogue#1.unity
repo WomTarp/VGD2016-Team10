@@ -116,8 +116,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 154, y: -82}
-  m_SizeDelta: {x: 459, y: 40}
+  m_AnchoredPosition: {x: 118, y: -62.75}
+  m_SizeDelta: {x: 529, y: 93.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &404595274
 CanvasRenderer:
@@ -157,7 +157,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (Press X to continue dialogue)
+  m_Text: '(Press Z to interact with objects.)
+
+    (Press X to continue dialogue.)'
 --- !u!1 &580710325
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,8 +260,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 6}
-  m_SizeDelta: {x: 741.5, y: 186}
+  m_AnchoredPosition: {x: -2, y: -1}
+  m_SizeDelta: {x: 742, y: 201}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1102213155
 MonoBehaviour:
@@ -498,6 +500,7 @@ GameObject:
   - 92: {fileID: 1961995301}
   - 124: {fileID: 1961995300}
   - 81: {fileID: 1961995299}
+  - 114: {fileID: 1961995304}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -572,6 +575,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1961995304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1961995298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3408b5f40e1537743bdeefd9a76dff96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: 81f27f9ccc7f2e042a4fd6d6caefb425, type: 3}
+  fadeSpeed: 0.8
 --- !u!1 &2142613120
 GameObject:
   m_ObjectHideFlags: 0

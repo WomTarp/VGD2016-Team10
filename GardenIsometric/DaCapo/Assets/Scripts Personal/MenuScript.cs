@@ -28,7 +28,7 @@ public class MenuScript : MonoBehaviour
 
     public void StartLevel()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(8);
     }
 
     public void ExitGame()

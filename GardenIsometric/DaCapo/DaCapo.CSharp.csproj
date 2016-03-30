@@ -66,12 +66,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DialoguePackage\FakeDialogueScript.cs" />
+    <Compile Include="Assets\DialogueTutorial\FakeDia2.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\Inventory.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\ItemData.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\ItemDatabase.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\SlotScript.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\TooltipScript.cs" />
     <Compile Include="Assets\Scripts Personal\ActivateTextAtLine.cs" />
+    <Compile Include="Assets\Scripts Personal\BackgroundMusic.cs" />
     <Compile Include="Assets\Scripts Personal\CallInventory.cs" />
     <Compile Include="Assets\Scripts Personal\CameraMovement.cs" />
     <Compile Include="Assets\Scripts Personal\CheckItem.cs" />
@@ -103,6 +105,15 @@
     <None Include="Assets\DialoguePackage\DialogueLines\line7.txt" />
     <None Include="Assets\DialoguePackage\DialogueLines\line8.txt" />
     <None Include="Assets\DialoguePackage\DialogueLines\line9.txt" />
+    <None Include="Assets\DialogueTutorial\Line1.txt" />
+    <None Include="Assets\DialogueTutorial\Line2.txt" />
+    <None Include="Assets\DialogueTutorial\Line3.txt" />
+    <None Include="Assets\DialogueTutorial\Line4.txt" />
+    <None Include="Assets\DialogueTutorial\Line5.txt" />
+    <None Include="Assets\DialogueTutorial\Line6.txt" />
+    <None Include="Assets\DialogueTutorial\Line7.txt" />
+    <None Include="Assets\DialogueTutorial\Line8.txt" />
+    <None Include="Assets\DialogueTutorial\Line9.txt" />
     <None Include="Assets\Texts\Bush.txt" />
     <None Include="Assets\Texts\Descriptions.txt" />
     <None Include="Assets\Texts\Dog.txt" />
