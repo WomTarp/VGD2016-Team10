@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour
@@ -30,6 +31,8 @@ public class Inventory : MonoBehaviour
             slots[i].GetComponent<SlotScript>().id = i;
             slots[i].transform.SetParent(slotPanel.transform);
         }
+
+        if (SceneManager.GetActiveScene().name == "Interior") AddItemOnStart(1);
     }
 
     public void AddItem(int id)
@@ -53,10 +56,32 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void removeItem(int id)
+    public void AddItemOnStart(int id)
     {
         Item itemToAdd = database.FetchItemByID(id);
-        itemToAdd.isInInventory = false;
+        itemToAdd.isInInventory = true;
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].ID == -1)
+            {
+                items[i] = itemToAdd;
+                GameObject itemObj = Instantiate(inventoryItem);
+                itemObj.GetComponent<ItemData>().item = itemToAdd;
+                itemObj.GetComponent<ItemData>().slot = i;
+                itemObj.transform.SetParent(slots[i].transform);
+                itemObj.transform.localPosition = new Vector2(0, 0);
+                itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
+                itemObj.name = itemToAdd.Title;
+                break;
+            }
+        }
+    }
+
+    public void removeItem(int id)
+    {
+        Item itemToRemove = database.FetchItemByID(id);
+        if (itemToRemove == null) return;
+        itemToRemove.isInInventory = false;
         for (int i = 0; i < items.Count; i++)
         {
             if (items[i].ID == id)
@@ -65,13 +90,13 @@ public class Inventory : MonoBehaviour
                 break;
             }
         }
-        Destroy(GameObject.Find(itemToAdd.Title));
+        Destroy(GameObject.Find(itemToRemove.Title));
     }
 
     public bool CheckIfItemIsInInventory(int itemIndex)
     {
         Item item = database.FetchItemByID(itemIndex);
-        if (item.isInInventory)
+        if (item != null && item.isInInventory)
         {
             return true;
         }

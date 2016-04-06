@@ -1,16 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CheckItem : MonoBehaviour {
-
-    public bool destroyWhenActivated;
+public class UnlockStudy : MonoBehaviour {
+    
     public bool requiredButtonPress;
     public bool waitForPress;
-    public bool getItem;
     public int itemCheckValue;
-    public int itemGetValue;
-    public bool removeItem;
-    public int activated = 0;
+    public Collider2D c1;
+    public Collider2D c2;
 
     public TextBoxManager tBox;
     public ActivateTextAtLine aBox;
@@ -26,17 +23,10 @@ public class CheckItem : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && waitForPress && activated == 0)
+        if (Input.GetKeyDown(KeyCode.Z) && waitForPress)
         {
-            if (this.name == "DogTrigger")
-            {
-                GetComponentInParent<PolygonCollider2D>().isTrigger = true;
-                GetComponentInParent<DogMove>().canMove = true;
-            }
-            if (removeItem) { inv.removeItem(itemCheckValue); }
-            if (getItem) inv.AddItem(itemGetValue);
-            if (destroyWhenActivated) Destroy(gameObject.GetComponent<CheckItem>());
-            activated = 1;
+            c1.enabled = false;
+            c2.enabled = false;
         }
     }
 

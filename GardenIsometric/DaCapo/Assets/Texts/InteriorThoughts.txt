@@ -1,0 +1,22 @@
+Arnoux: An unlit fireplace, huh? Well it is pretty cold in here...
+Good thing I found these matches.
+*(You light the fire with the matches.)*
+*(The old logs are quickly consumed by the fire.)*
+Arnoux: Hm? What's that glinting under the logs?
+
+Arnoux: It's warm enough now, maybe I should see what that thing is under the logs...
+I wonder how I can put out the fire?
+I'll just douse the flames with this bucket of water.
+*(The fire is put out.)*
+Arnoux: It looks like that thing I saw was a key of some sort.
+*(You acquired the scorched key.)*
+
+*(You acquired a box of matches.)*
+
+*(You acquired an empty bucket.)*
+
+*(You filled the empty bucket with water.)*
+
+Arnoux: This door seems to be locked.
+Maybe this key I found can open it.
+*(You used the scorched key and the door unlocks.)*

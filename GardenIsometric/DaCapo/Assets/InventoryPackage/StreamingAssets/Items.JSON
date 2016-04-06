@@ -12,5 +12,33 @@
     "description": "Crumpled scrap of sheet music. The notation is faded.",
     "usable": false,
     "slug": "sheet1"
+  },
+  {
+    "id": 2,
+    "title": "Matches",
+    "description": "A small box of wooden matches.",
+    "usable": true,
+    "slug": "matches"
+  },
+  {
+    "id": 3,
+    "title": "Scorched Key",
+    "description": "A metal key lined with scorch marks.",
+    "usable": true,
+    "slug": "scorched_key"
+  },
+  {
+    "id": 4,
+    "title": "Empty Bucket",
+    "description": "A tin bucket with a sturdy handle.",
+    "usable": true,
+    "slug": "empty_bucket"
+  },
+  {
+    "id": 5,
+    "title": "Bucket of Water",
+    "description": "The water sloshes around the bucket as you carry it.",
+    "usable": true,
+    "slug": "water_bucket"
   }
 ]

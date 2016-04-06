@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class ActivateTextAtLine : MonoBehaviour {
@@ -14,12 +15,13 @@ public class ActivateTextAtLine : MonoBehaviour {
     public bool continueText;
     public bool destroyWhenActivated;
     public bool requiredButtonPress;
-    private bool waitForPress;
-    private bool textBoxActivated;
-    private bool discontinueText;
+    public bool waitForPress;
+    public bool textBoxActivated;
+    public bool discontinueText;
 
 	// Use this for initialization
 	void Start () {
+        discontinueText = false;
         tBox = FindObjectOfType<TextBoxManager>();
         textBoxActivated = false;
 	}
@@ -52,7 +54,8 @@ public class ActivateTextAtLine : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!GameObject.Find("Dog").GetComponent<DogMove>().addDescription && this.name == "DogMovePoint") { return;  }
+        if (SceneManager.GetActiveScene().name == "Exterior")
+            if (!GameObject.Find("Dog").GetComponent<DogMove>().addDescription && this.name == "DogMovePoint") { return;  }
         if (other.name == "MainCharacter")
         {
             if (requiredButtonPress)
@@ -60,13 +63,6 @@ public class ActivateTextAtLine : MonoBehaviour {
                 waitForPress = true;
                 return;
             }
-
-            tBox.ReloadScripts(theText);
-            tBox.currentLine = startLine;
-            tBox.endAtLine = endLine;
-            tBox.EnableTextBox();
-
-            if (destroyWhenActivated) gameObject.SetActive(false);
         }
     }
 

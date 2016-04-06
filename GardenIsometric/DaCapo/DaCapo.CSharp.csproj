@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts Personal\CameraMovement.cs" />
     <Compile Include="Assets\Scripts Personal\CheckItem.cs" />
     <Compile Include="Assets\Scripts Personal\DogMove.cs" />
+    <Compile Include="Assets\Scripts Personal\DoubleActivateTextAtLine.cs" />
     <Compile Include="Assets\Scripts Personal\Fading.cs" />
     <Compile Include="Assets\Scripts Personal\GameManager.cs" />
     <Compile Include="Assets\Scripts Personal\GetItem.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\Scripts Personal\Teleport.cs" />
     <Compile Include="Assets\Scripts Personal\TextBoxManager.cs" />
     <Compile Include="Assets\Scripts Personal\TextImporter.cs" />
+    <Compile Include="Assets\Scripts Personal\UnlockStudy.cs" />
     <Compile Include="Assets\Scripts Personal\cameraPanRight.cs" />
     <Compile Include="Assets\Scripts Personal\changeScene.cs" />
     <Compile Include="Assets\Scripts Personal\hideText.cs" />
@@ -119,6 +121,7 @@
     <None Include="Assets\Texts\Dog.txt" />
     <None Include="Assets\Texts\Door.txt" />
     <None Include="Assets\Texts\Front Gate.txt" />
+    <None Include="Assets\Texts\InteriorThoughts.txt" />
     <None Include="Assets\Texts\Thoughts.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

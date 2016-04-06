@@ -1233,6 +1233,9 @@ MonoBehaviour:
   continueText: 0
   destroyWhenActivated: 0
   requiredButtonPress: 1
+  waitForPress: 0
+  textBoxActivated: 0
+  discontinueText: 0
 --- !u!61 &897736547
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1295,6 +1298,9 @@ MonoBehaviour:
   continueText: 0
   destroyWhenActivated: 0
   requiredButtonPress: 1
+  waitForPress: 0
+  textBoxActivated: 0
+  discontinueText: 0
 --- !u!61 &918718715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1653,6 +1659,9 @@ MonoBehaviour:
   continueText: 1
   destroyWhenActivated: 1
   requiredButtonPress: 1
+  waitForPress: 0
+  textBoxActivated: 0
+  discontinueText: 0
 --- !u!1 &1213820814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,6 +1725,9 @@ MonoBehaviour:
   continueText: 0
   destroyWhenActivated: 0
   requiredButtonPress: 1
+  waitForPress: 0
+  textBoxActivated: 0
+  discontinueText: 0
 --- !u!114 &1213820818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1970,6 +1982,9 @@ MonoBehaviour:
   continueText: 1
   destroyWhenActivated: 1
   requiredButtonPress: 1
+  waitForPress: 0
+  textBoxActivated: 0
+  discontinueText: 0
 --- !u!114 &1474274560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2282,6 +2297,9 @@ MonoBehaviour:
   continueText: 0
   destroyWhenActivated: 0
   requiredButtonPress: 1
+  waitForPress: 0
+  textBoxActivated: 0
+  discontinueText: 0
 --- !u!1 &1834537299
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2362,9 @@ MonoBehaviour:
   continueText: 0
   destroyWhenActivated: 0
   requiredButtonPress: 1
+  waitForPress: 0
+  textBoxActivated: 0
+  discontinueText: 0
 --- !u!1 &1849621166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,6 +2439,7 @@ MonoBehaviour:
   itemCheckValue: 0
   itemGetValue: 1
   removeItem: 1
+  activated: 0
   tBox: {fileID: 293173721}
   aBox: {fileID: 1926658035}
   inv: {fileID: 1739173921}
@@ -2440,6 +2462,9 @@ MonoBehaviour:
   continueText: 0
   destroyWhenActivated: 1
   requiredButtonPress: 1
+  waitForPress: 0
+  textBoxActivated: 0
+  discontinueText: 0
 --- !u!61 &1926658036
 BoxCollider2D:
   m_ObjectHideFlags: 0
