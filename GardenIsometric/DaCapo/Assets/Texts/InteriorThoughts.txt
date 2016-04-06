@@ -15,8 +15,27 @@ Arnoux: It looks like that thing I saw was a key of some sort.
 
 *(You acquired an empty bucket.)*
 
+Arnoux: I wonder how much he paid to get running water all the way out in the middle of nowhere.
 *(You filled the empty bucket with water.)*
 
 Arnoux: This door seems to be locked.
 Maybe this key I found can open it.
 *(You used the scorched key and the door unlocks.)*
+
+Arnoux: This door won't budge.
+
+Arnoux: These windows are locked tight...
+But it's a nice day outside!
+
+Arnoux: It looks like he's pretty far into this book: "Il Nome della Rosa."
+Huh, I've never read this one.
+
+Arnoux: The sink looks nice but doesn't seem to be working.
+
+Arnoux: It seems he's working on sketches for some kind of new farming plot.
+I guess he's been growing his own food.
+
+Arnoux: Nothing but clothes in here...
+
+Arnoux: Dostoyevsky, Tolstoy, Chekov, Lermontov, Gogol, Pushkin...
+I've read some of these, pretty dreary stuff.

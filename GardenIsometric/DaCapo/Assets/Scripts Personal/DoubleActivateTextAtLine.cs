@@ -65,8 +65,8 @@ public class DoubleActivateTextAtLine : ActivateTextAtLine {
                     endLine = endLineB;
                     endLine2 = endLineB2;
                     check2.enabled = true;
-                    check2.waitForPress = true;
-                    continueText = check2.inv.CheckIfItemIsInInventory(check2.itemCheckValue);
+                    if (check2.inv.CheckIfItemIsInInventory(check2.itemCheckValue)) check2.waitForPress = true;
+                    else continueText = false;
                     check1.enabled = false;
                     nextText = false;
                     getItem = 1;
