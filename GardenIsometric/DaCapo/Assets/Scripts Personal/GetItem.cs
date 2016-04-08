@@ -10,6 +10,7 @@ public class GetItem : MonoBehaviour {
     public bool pickUpChangesScene;
     public bool doChangeScene;
     public int sceneToChange;
+    public bool removeSprite;
 
     public Inventory inv;
     // Use this for initialization
@@ -22,8 +23,12 @@ public class GetItem : MonoBehaviour {
         if (waitForPress && Input.GetKeyDown(KeyCode.Z))
         {
             inv.AddItem(itemGetValue);
-            if (pickUpChangesScene) doChangeScene = true; 
-            if (destroyWhenActivated) gameObject.SetActive(false);
+            if (pickUpChangesScene) doChangeScene = true;
+            if (destroyWhenActivated)
+            {
+                GetComponent<GetItem>().enabled = false;
+                if (removeSprite) GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
     }
 

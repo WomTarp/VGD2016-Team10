@@ -40,5 +40,40 @@
     "description": "The water sloshes around the bucket as you carry it.",
     "usable": true,
     "slug": "water_bucket"
+  },
+  {
+    "id": 6,
+    "title": "Cipher Note",
+    "description": "Right shift the alphabet by 4",
+    "usable": true,
+    "slug": "cipher_note"
+  },
+  {
+    "id": 7,
+    "title": "Coded Note #1",
+    "description": "XLVII",
+    "usable": true,
+    "slug": "coded_note_1"
+  },
+  {
+    "id": 8,
+    "title": "Coded Note #2",
+    "description": "XAS",
+    "usable": true,
+    "slug": "coded_note_2"
+  },
+  {
+    "id": 9,
+    "title": "Coded Note #3",
+    "description": "JMZI",
+    "usable": true,
+    "slug": "coded_note_3"
+  },
+  {
+    "id": 10,
+    "title": "Coded Note #4",
+    "description": "WIZIR",
+    "usable": true,
+    "slug": "coded_note_4"
   }
 ]

@@ -1639,6 +1639,7 @@ MonoBehaviour:
   pickUpChangesScene: 1
   doChangeScene: 0
   sceneToChange: 7
+  removeSprite: 0
   inv: {fileID: 1739173921}
 --- !u!114 &1127179322
 MonoBehaviour:
@@ -2002,6 +2003,7 @@ MonoBehaviour:
   pickUpChangesScene: 0
   doChangeScene: 0
   sceneToChange: 0
+  removeSprite: 1
   inv: {fileID: 1739173921}
 --- !u!1 &1514658216
 GameObject:
@@ -2435,6 +2437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyWhenActivated: 0
   requiredButtonPress: 1
+  waitForPress: 0
   getItem: 0
   itemCheckValue: 0
   itemGetValue: 1

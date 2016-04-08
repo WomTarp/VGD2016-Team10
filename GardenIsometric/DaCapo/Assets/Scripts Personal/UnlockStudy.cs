@@ -27,6 +27,7 @@ public class UnlockStudy : MonoBehaviour {
         {
             c1.enabled = false;
             c2.enabled = false;
+            inv.removeItem(itemCheckValue);
         }
     }
 
