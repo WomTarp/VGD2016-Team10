@@ -39,9 +39,10 @@ public class TextBoxManager : MonoBehaviour {
 
         if (currentLine <= endAtLine) { theText.text = textLines[currentLine]; finishedText = false; }
 
-        if (Input.GetKeyDown(KeyCode.X)) currentLine++;
+        if (Input.GetKeyDown(KeyCode.X)) 
+            currentLine++;
 
-        if (currentLine > endAtLine) { theText.text = "";  finishedText = true; DisableTextBox(); }
+        if (currentLine > endAtLine) { theText.text = "";  finishedText = true; DisableTextBox();}
     }
 
     public void EnableTextBox()

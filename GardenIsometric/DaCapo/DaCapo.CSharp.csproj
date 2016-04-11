@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts Personal\PickUpFade.cs" />
     <Compile Include="Assets\Scripts Personal\PlatformScripts.cs" />
     <Compile Include="Assets\Scripts Personal\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts Personal\ShowArrow.cs" />
     <Compile Include="Assets\Scripts Personal\Teleport.cs" />
     <Compile Include="Assets\Scripts Personal\TextBoxManager.cs" />
     <Compile Include="Assets\Scripts Personal\TextImporter.cs" />
