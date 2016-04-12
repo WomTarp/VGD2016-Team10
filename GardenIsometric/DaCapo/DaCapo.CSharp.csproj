@@ -65,7 +65,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DialoguePackage\FakeDialogueScript.cs" />
+    <Compile Include="Assets\DialoguePackage\Dialogue#1\FakeDialogueScript1.cs" />
+    <Compile Include="Assets\DialoguePackage\Dialogue#2\FakeDialogueScript2.cs" />
     <Compile Include="Assets\DialogueTutorial\FakeDia2.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\Inventory.cs" />
     <Compile Include="Assets\InventoryPackage\Scripts\ItemData.cs" />
@@ -99,15 +100,30 @@
     <Compile Include="Assets\VideoPackage\PlayVideo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DialoguePackage\DialogueLines\line1.txt" />
-    <None Include="Assets\DialoguePackage\DialogueLines\line2.txt" />
-    <None Include="Assets\DialoguePackage\DialogueLines\line3.txt" />
-    <None Include="Assets\DialoguePackage\DialogueLines\line4.txt" />
-    <None Include="Assets\DialoguePackage\DialogueLines\line5.txt" />
-    <None Include="Assets\DialoguePackage\DialogueLines\line6.txt" />
-    <None Include="Assets\DialoguePackage\DialogueLines\line7.txt" />
-    <None Include="Assets\DialoguePackage\DialogueLines\line8.txt" />
-    <None Include="Assets\DialoguePackage\DialogueLines\line9.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#1\Dialogue1Lines\line1.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#1\Dialogue1Lines\line2.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#1\Dialogue1Lines\line3.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#1\Dialogue1Lines\line4.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#1\Dialogue1Lines\line5.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#1\Dialogue1Lines\line6.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#1\Dialogue1Lines\line7.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#1\Dialogue1Lines\line8.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#1\Dialogue1Lines\line9.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line0.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line1.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line10.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line11.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line2.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line3(b).txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line3.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line4.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line5.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line6.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line7.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line8.txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line9(b).txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line9(c).txt" />
+    <None Include="Assets\DialoguePackage\Dialogue#2\Dialogue2Lines\line9.txt" />
     <None Include="Assets\DialogueTutorial\Line1.txt" />
     <None Include="Assets\DialogueTutorial\Line2.txt" />
     <None Include="Assets\DialogueTutorial\Line3.txt" />

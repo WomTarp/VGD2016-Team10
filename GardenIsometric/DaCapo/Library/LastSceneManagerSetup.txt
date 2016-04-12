@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Interior.unity
+- path: Assets/DialoguePackage/Dialogue#2/Dialogue#2.unity
   isLoaded: 1
   isActive: 1

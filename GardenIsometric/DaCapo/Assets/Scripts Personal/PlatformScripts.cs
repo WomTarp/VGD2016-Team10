@@ -57,7 +57,7 @@ public class PlatformScripts : MonoBehaviour
 
         if (co.name == "musicSheet")        //loads to next level 
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("MainRoom");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(9);
         }
         if (co.tag == "Notes")             //notes pickup
         {

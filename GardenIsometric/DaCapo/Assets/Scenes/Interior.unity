@@ -3140,7 +3140,7 @@ Transform:
   - {fileID: 916285282}
   - {fileID: 509438005}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!114 &1207633344 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11499588, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1,
@@ -3297,7 +3297,7 @@ Transform:
   - {fileID: 1944891180}
   - {fileID: 1744490625}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &1263092629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3489,7 +3489,7 @@ Transform:
   - {fileID: 130524664}
   - {fileID: 1866407970}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!61 &1360118139
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3801,7 +3801,7 @@ Transform:
   - {fileID: 590683453}
   - {fileID: 1418911404}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!61 &1462255722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4444,11 +4444,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.75
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.73
+      value: -7.63
       objectReference: {fileID: 0}
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4478,6 +4478,11 @@ Prefab:
       propertyPath: inventoryPanel
       value: 
       objectReference: {fileID: 1594168980}
+    - target: {fileID: 21296594, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300024, guid: 65fb1b9b7dca51f4da31a4dc08cc0d71,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
   m_IsPrefabParent: 0
@@ -4905,7 +4910,7 @@ Transform:
   - {fileID: 742131821}
   - {fileID: 1498804118}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!68 &2000772311
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -5140,4 +5145,4 @@ Transform:
   - {fileID: 1857044789}
   - {fileID: 194165695}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
