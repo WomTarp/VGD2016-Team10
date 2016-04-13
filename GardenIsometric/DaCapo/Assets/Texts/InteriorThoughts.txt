@@ -35,8 +35,8 @@ Arnoux: Hey, what's this?
 
 Arnoux: The sink looks nice but doesn't seem to be working.
 
-Arnoux: It seems he's working on sketches for some kind of new farming plot.
-I guess he's been growing his own food.
+
+
 
 Arnoux: Nothing but clothes in here...
 
@@ -73,3 +73,9 @@ Arnoux: Jeez, he can't even smile for a portrait with his own dog.
 
 Arnoux: A snapshot of the infinite cosmos in all of its majesty...
 Or something like that. 
+
+Arnoux: It seems he's working on sketches for some kind of new farming plot.
+I guess he's been growing his own food.
+*(You search the drawers.)*
+Arnoux: Strange, there's nothing in here but these two notes.
+*(You got cipher note and coded note #1)*

@@ -28,7 +28,8 @@ public class MenuScript : MonoBehaviour
 
     public void StartLevel()
     {
-        SceneManager.LoadScene(8);
+        if (SceneManager.GetActiveScene().name == "MainMenu") SceneManager.LoadScene("Video");
+        else SceneManager.LoadScene(8);
     }
 
     public void ExitGame()

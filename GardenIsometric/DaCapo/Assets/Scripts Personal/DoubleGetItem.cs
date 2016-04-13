@@ -1,33 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GetItem : MonoBehaviour {
+public class DoubleGetItem : MonoBehaviour
+{
 
     public bool destroyWhenActivated;
     public bool requiredButtonPress;
     private bool waitForPress;
-    public int itemGetValue;
-    public bool pickUpChangesScene;
-    public bool doChangeScene;
-    public string sceneToChange;
-    public bool removeSprite;
+    public int itemGetValue1;
+    public int itemGetValue2;
 
     public Inventory inv;
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         inv = GameObject.Find("MainCharacter").GetComponentInChildren<Inventory>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         if (waitForPress && Input.GetKeyDown(KeyCode.Z))
         {
-            inv.AddItem(itemGetValue);
-            if (pickUpChangesScene) doChangeScene = true;
+            inv.AddItem(itemGetValue1);
+            inv.AddItem(itemGetValue2);
             if (destroyWhenActivated)
             {
-                GetComponent<GetItem>().enabled = false;
-                if (removeSprite) GetComponent<SpriteRenderer>().enabled = false;
+                GetComponent<DoubleGetItem>().enabled = false;
             }
         }
     }

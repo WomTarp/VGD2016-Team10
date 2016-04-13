@@ -1005,6 +1005,7 @@ GameObject:
   - 4: {fileID: 450624954}
   - 114: {fileID: 450624956}
   - 61: {fileID: 450624955}
+  - 114: {fileID: 450624957}
   m_Layer: 0
   m_Name: BedroomDesk
   m_TagString: Untagged
@@ -1050,16 +1051,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theText: {fileID: 4900000, guid: 2e82640b09c2ec34faecdcbdc94f55a9, type: 3}
-  startLine: 37
-  endLine: 38
-  endLine2: 0
+  startLine: 76
+  endLine: 80
+  endLine2: 80
   tBox: {fileID: 0}
-  continueText: 0
-  destroyWhenActivated: 0
+  continueText: 1
+  destroyWhenActivated: 1
   requiredButtonPress: 1
   waitForPress: 0
   textBoxActivated: 0
   discontinueText: 0
+--- !u!114 &450624957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 450624953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c266e7ac0c7f30e408e66fa9c341158e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyWhenActivated: 1
+  requiredButtonPress: 1
+  itemGetValue1: 6
+  itemGetValue2: 7
+  inv: {fileID: 0}
 --- !u!1 &470309377
 GameObject:
   m_ObjectHideFlags: 0
@@ -4444,11 +4461,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.72
+      value: 1.67
       objectReference: {fileID: 0}
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -7.63
+      value: -6.25
       objectReference: {fileID: 0}
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.z

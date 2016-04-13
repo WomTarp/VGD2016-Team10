@@ -34,7 +34,7 @@ public class Determination : MonoBehaviour
                 leave.gameObject.SetActive(true);
                 stay.gameObject.SetActive(true);
                 GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
-                
+                GetComponent<Rigidbody2D>().gravityScale = 0;
             }
         }
     }

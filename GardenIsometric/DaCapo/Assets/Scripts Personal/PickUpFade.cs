@@ -26,17 +26,17 @@ public class PickUpFade : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.name == "MainCharacter") entered = true;
-        }  
+    }  
 
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.name == "MainCharacter") entered = false;
     }
 
-    IEnumerator ChangeLevel(int sceneNumber)
+    IEnumerator ChangeLevel(string sceneName)
     {
         float fadeTime = GameObject.Find("MainCharacter").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneNumber);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
     }
 }

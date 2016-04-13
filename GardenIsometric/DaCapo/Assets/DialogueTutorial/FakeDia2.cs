@@ -24,12 +24,12 @@ public class FakeDia2 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        lineCount = 1;
+        lineCount = 0;
         //instruction = instruction.GetComponent<Text>();
         //background = background.GetComponent<Image>();
         lines = lines.GetComponent<Text>();
         //background.sprite = doorOpen;
-        lines.text = line1.ToString();
+        //lines.text = line1.ToString();
     }
 
     // Update is called once per frame
@@ -93,7 +93,7 @@ public class FakeDia2 : MonoBehaviour
 
         else if (lineCount == 10)
         {
-            SceneManager.LoadScene("GardenPlatformLevel");
+            SceneManager.LoadScene("Platform");
         }
     }
 }

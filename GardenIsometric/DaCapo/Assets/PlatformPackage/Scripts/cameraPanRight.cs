@@ -32,15 +32,7 @@ public class cameraPanRight : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene("GardenPlatform");
         }
 
-        if (co.name == "musicSheet0")
-        {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
-        }
-        if (co.name == "musicSheet1")
-        {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
-        }
-        if (co.name == "musicSheet2")
+        if (co.name == "CameraStopper")
         {
             GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
         }
