@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/DialoguePackage/Dialogue#2/Dialogue#2.unity
+- path: Assets/Scenes/Platform.unity
   isLoaded: 1
   isActive: 1

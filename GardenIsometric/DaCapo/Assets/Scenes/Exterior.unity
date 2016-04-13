@@ -1638,7 +1638,7 @@ MonoBehaviour:
   itemGetValue: 1
   pickUpChangesScene: 1
   doChangeScene: 0
-  sceneToChange: 7
+  sceneToChange: 9
   removeSprite: 0
   inv: {fileID: 1739173921}
 --- !u!114 &1127179322

@@ -29,7 +29,7 @@ public class PlayVideo : MonoBehaviour
 
     private void OnWaitFinished()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(7);
     }
 
     private IEnumerator Wait(float duration, System.Action callback)

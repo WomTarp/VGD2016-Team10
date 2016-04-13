@@ -1296,13 +1296,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11425092, guid: 7f96e12920ed1e34ab37c79c705e5c33, type: 2}
+      - m_Target: {fileID: 11473054, guid: f50d64cd3e2bf1e4388c88fba523b0bf, type: 2}
         m_MethodName: ChangeToScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
