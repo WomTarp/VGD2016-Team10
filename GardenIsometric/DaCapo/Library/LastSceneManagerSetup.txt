@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/GardenPlatform.unity
+- path: Assets/DialoguePackage/Dialogue#4/Dialogue#4.unity
   isLoaded: 1
   isActive: 1

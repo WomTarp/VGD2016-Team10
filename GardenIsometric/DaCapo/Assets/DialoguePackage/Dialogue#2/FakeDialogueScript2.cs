@@ -2,6 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Threading;
+using System;
 
 public class FakeDialogueScript2 : MonoBehaviour
 {
@@ -22,11 +24,16 @@ public class FakeDialogueScript2 : MonoBehaviour
     public TextAsset line9c;
     public TextAsset line10;
     public TextAsset line11;
-    public Sprite foyerChat;
-    public Sprite foyerAlone;
-    public Sprite foyerLeft;
-    public Sprite foyerRight;
+    public Sprite foyerEmpty;
+    public Sprite arnouxUp;
+    public Sprite arnouxLeft;
+    public Sprite arnouxRight;
     public int pressCount;
+    public float speed;
+    public Image arnoux;
+    public GameObject moreau;
+    private Rigidbody2D moreauBody;
+    public bool isMoving;
 
     // Use this for initialization
     void Start()
@@ -34,17 +41,22 @@ public class FakeDialogueScript2 : MonoBehaviour
         pressCount = 0;
         background = background.GetComponent<Image>();
         lines = lines.GetComponent<Text>();
-        background.sprite = foyerChat;
+        moreauBody = moreau.GetComponent<Rigidbody2D>();
+        background.sprite = foyerEmpty;
         lines.text = line0.ToString();
+        isMoving = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        if (!isMoving)
         {
-            pressCount++;
-            nextLine();
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                pressCount++;
+                nextLine();
+            }
         }
     }
 
@@ -98,40 +110,58 @@ public class FakeDialogueScript2 : MonoBehaviour
 
         else if (pressCount == 10)
         {
-            background.sprite = foyerAlone;
-            lines.text = line9a.ToString();
+            moreauBody.AddForce(Vector2.up * speed);
+            lines.text = line10.ToString();
+            isMoving = true;
+            StartCoroutine(Wait(2, OnWaitFinished));
         }
 
         else if (pressCount == 11)
         {
-            lines.text = line9b.ToString();
+            lines.text = line9a.ToString();
         }
 
         else if (pressCount == 12)
         {
-            lines.text = line9c.ToString();
+            lines.text = line9b.ToString();
         }
 
         else if (pressCount == 13)
         {
-            background.sprite = foyerRight;
-            lines.text = line10.ToString();
+            lines.text = line9c.ToString();
         }
 
         else if (pressCount == 14)
         {
-            background.sprite = foyerLeft;
+            arnoux.sprite = arnouxRight;
+            lines.text = line10.ToString();
         }
 
         else if (pressCount == 15)
         {
-            background.sprite = foyerAlone;
-            lines.text = line11.ToString();
+            arnoux.sprite = arnouxLeft;
         }
 
         else if (pressCount == 16)
         {
+            arnoux.sprite = arnouxUp;
+            lines.text = line11.ToString();
+        }
+
+        else if (pressCount == 17)
+        {
             SceneManager.LoadScene("Interior");
         }
+    }
+
+    private void OnWaitFinished()
+    {
+        isMoving = false;
+    }
+
+    private IEnumerator Wait(float duration, System.Action callback)
+    {
+        yield return new WaitForSeconds(duration);
+        if (callback != null) callback();
     }
 }
