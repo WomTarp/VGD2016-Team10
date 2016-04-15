@@ -192,6 +192,7 @@
     <None Include="Assets\DialogueTutorial\Line7.txt" />
     <None Include="Assets\DialogueTutorial\Line8.txt" />
     <None Include="Assets\DialogueTutorial\Line9.txt" />
+    <None Include="Assets\Texts\GardenThoughts.txt" />
     <None Include="Assets\Texts\InteriorThoughts.txt" />
     <None Include="Assets\Texts\Thoughts.txt" />
   </ItemGroup>

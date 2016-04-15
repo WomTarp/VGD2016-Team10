@@ -1,0 +1,11 @@
+// Leo - Truth
+(5,8) Virgo - Truth
+
+// Aquarius - Truth
+(-3,4) Leo - Truth
+
+// Virgo - Truth
+(2,0) Taurus - Liar
+
+// Taurus - Liar
+(-3,6) Aquarius - Liar
