@@ -33,6 +33,12 @@ public class Inventory : MonoBehaviour
         }
 
         if (SceneManager.GetActiveScene().name == "Interior") AddItemOnStart(1);
+
+        // Debug item code
+        //AddItemOnStart(7);
+        //AddItemOnStart(8);
+        //AddItemOnStart(9);
+        //AddItemOnStart(10);
     }
 
     public void AddItem(int id)

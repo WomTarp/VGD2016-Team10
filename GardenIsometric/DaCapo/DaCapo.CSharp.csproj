@@ -94,9 +94,11 @@
     <Compile Include="Assets\Scripts Personal\GameManager.cs" />
     <Compile Include="Assets\Scripts Personal\GetItem.cs" />
     <Compile Include="Assets\Scripts Personal\GoInside.cs" />
+    <Compile Include="Assets\Scripts Personal\KeyPad.cs" />
     <Compile Include="Assets\Scripts Personal\MenuScript.cs" />
     <Compile Include="Assets\Scripts Personal\PickUpFade.cs" />
     <Compile Include="Assets\Scripts Personal\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts Personal\QuadrupleCheckItem.cs" />
     <Compile Include="Assets\Scripts Personal\ShowArrow.cs" />
     <Compile Include="Assets\Scripts Personal\Teleport.cs" />
     <Compile Include="Assets\Scripts Personal\TextBoxManager.cs" />

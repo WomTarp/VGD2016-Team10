@@ -79,3 +79,11 @@ I guess he's been growing his own food.
 *(You search the drawers.)*
 Arnoux: Strange, there's nothing in here but these two notes.
 *(You got cipher note and coded note #1)*
+
+*(A strong box with a keypad lock.)*
+Arnoux: Is there something glowing in there?
+Maybe I should try to figure out the code.
+I think these notes I found might be the key to opening it.
+
+*(You peer into the chest and see another scrap of sheet music.)*
+*(You got another scrap of sheet music.)*

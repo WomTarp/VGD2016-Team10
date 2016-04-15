@@ -15,6 +15,7 @@ public class DoubleActivateTextAtLine : ActivateTextAtLine {
 
     public CheckItem check1;
     public CheckItem check2;
+    public SpriteRenderer fireplace;
 
     //public TextBoxManager tBox;
 
@@ -30,6 +31,7 @@ public class DoubleActivateTextAtLine : ActivateTextAtLine {
     // Use this for initialization
     void Start()
     {
+        fireplace.enabled = false;
         check1.enabled = true;
         check2.enabled = false;
         getItem = 0;
@@ -58,7 +60,11 @@ public class DoubleActivateTextAtLine : ActivateTextAtLine {
 
             if (destroyWhenActivated && continueText)
             {
-                if (getItem == 1) discontinueText = true;
+                if (getItem == 1)
+                {
+                    discontinueText = true;
+                    fireplace.enabled = false;
+                }
                 else
                 {
                     startLine = startLine2;
@@ -68,6 +74,7 @@ public class DoubleActivateTextAtLine : ActivateTextAtLine {
                     if (check2.inv.CheckIfItemIsInInventory(check2.itemCheckValue)) check2.waitForPress = true;
                     else continueText = false;
                     check1.enabled = false;
+                    fireplace.enabled = true;
                     nextText = false;
                     getItem = 1;
                 }
