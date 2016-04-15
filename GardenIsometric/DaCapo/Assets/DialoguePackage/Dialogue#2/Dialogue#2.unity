@@ -124,6 +124,29 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11491454, guid: 1dec1dfbb7c16a3419649b287731a286, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34b766749fc4ce545bb72577b3de709d,
+        type: 3}
+    - target: {fileID: 22433138, guid: 1dec1dfbb7c16a3419649b287731a286, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -233
+      objectReference: {fileID: 0}
+    - target: {fileID: 22433138, guid: 1dec1dfbb7c16a3419649b287731a286, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470154, guid: 1dec1dfbb7c16a3419649b287731a286, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300012, guid: 65fb1b9b7dca51f4da31a4dc08cc0d71,
+        type: 3}
+    - target: {fileID: 11430324, guid: 1dec1dfbb7c16a3419649b287731a286, type: 2}
+      propertyPath: foyerEmpty
+      value: 
+      objectReference: {fileID: 21300000, guid: 34b766749fc4ce545bb72577b3de709d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1dec1dfbb7c16a3419649b287731a286, type: 2}
   m_IsPrefabParent: 0

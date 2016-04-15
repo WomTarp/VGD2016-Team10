@@ -110,7 +110,7 @@ public class FakeDialogueScript2 : MonoBehaviour
 
         else if (pressCount == 10)
         {
-            moreauBody.AddForce(Vector2.up * speed);
+            moreauBody.AddForce(Vector2.left * speed);
             lines.text = line10.ToString();
             isMoving = true;
             StartCoroutine(Wait(2, OnWaitFinished));
@@ -139,12 +139,12 @@ public class FakeDialogueScript2 : MonoBehaviour
 
         else if (pressCount == 15)
         {
-            arnoux.sprite = arnouxLeft;
+            arnoux.sprite = arnouxUp;
         }
 
         else if (pressCount == 16)
         {
-            arnoux.sprite = arnouxUp;
+            arnoux.sprite = arnouxLeft;
             lines.text = line11.ToString();
         }
 
