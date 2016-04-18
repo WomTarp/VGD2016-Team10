@@ -11,6 +11,11 @@ public class Teleport : MonoBehaviour {
     public Transform marker;
     public PlayerMovement player;
 
+    void Start()
+    {
+        player = GameObject.Find("MainCharacter").GetComponent<PlayerMovement>();
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.name == "MainCharacter")

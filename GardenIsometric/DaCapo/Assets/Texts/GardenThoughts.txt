@@ -1,11 +1,28 @@
-// Leo - Truth
-(5,8) Virgo - Truth
+// Leo - Truth --> Virgo - Truth
+(5,8) "Heed this old lion, the virgin speaks the truth."
 
-// Aquarius - Truth
-(-3,4) Leo - Truth
+// Aquarius - Truth --> Leo - Truth
+(-3,4) "The fount of life says thus: listen to the words of the noble lion."
 
-// Virgo - Truth
-(2,0) Taurus - Liar
+// Virgo - Truth --> Taurus - Liar
+(5,0) "By my honor as a maiden, do not trust that bull."
 
-// Taurus - Liar
-(-3,6) Aquarius - Liar
+// Taurus - Liar --> Aquarius - Liar
+(-3,6) "This bull will not mislead you: lies flow from her mouth as water in the stream."
+
+
+
+Arnoux: This must be the spot that weird puzzle was describing.
+Maybe I'll find something if I dig here.
+*(You begin lightly digging. You here a crumpling sound.)*
+
+Arnoux: What's this?
+*(You got yet another scrap of music sheet.)*
+
+"Four statues, each with a tale to tell. One of them a liar, the others wish you well."
+"But each holds a piece of what you seek."
+"The sum of the truths minus the lie will make the answer clear to your eye."
+
+*(You pick up the shovel.)*
+*(There is a note attached to the shovel describing the garden in Cartesian coordinates.)*
+*(The origin appears to be in the bottom left.)*

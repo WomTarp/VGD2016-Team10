@@ -205,7 +205,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -281,13 +281,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 106464}
   theText: {fileID: 11436626}
-  textFile: {fileID: 4900000, guid: 2f86adea3f54c7247b20329316c1d99a, type: 3}
+  textFile: {fileID: 4900000, guid: 2e82640b09c2ec34faecdcbdc94f55a9, type: 3}
   textLines: []
   currentLine: 0
   endAtLine: 0
   player: {fileID: 0}
   isActive: 0
   stopPlayerMovement: 1
+  finishedText: 0
 --- !u!222 &22221892
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -333,8 +334,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 69.5}
-  m_SizeDelta: {x: 562, y: 121}
+  m_AnchoredPosition: {x: 1, y: 99}
+  m_SizeDelta: {x: 770, y: 179}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22477910
 RectTransform:

@@ -22,7 +22,9 @@ public class PlayerMovement : MonoBehaviour
     {
         playerBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        if (SceneManager.GetActiveScene().name == "Exterior") anim.SetBool("Up", true);
+        if (SceneManager.GetActiveScene().name == "Exterior" ||
+            SceneManager.GetActiveScene().name == "RearGarden" ||
+            SceneManager.GetActiveScene().name == "MazeScene") anim.SetBool("Up", true);
         if (SceneManager.GetActiveScene().name == "Interior") anim.SetBool("Left", true);
         canInventory = true;
         canMove = true;

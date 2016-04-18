@@ -100,6 +100,7 @@
     <Compile Include="Assets\Scripts Personal\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts Personal\QuadrupleCheckItem.cs" />
     <Compile Include="Assets\Scripts Personal\ShowArrow.cs" />
+    <Compile Include="Assets\Scripts Personal\SpecialCheckItem.cs" />
     <Compile Include="Assets\Scripts Personal\Teleport.cs" />
     <Compile Include="Assets\Scripts Personal\TextBoxManager.cs" />
     <Compile Include="Assets\Scripts Personal\TextImporter.cs" />

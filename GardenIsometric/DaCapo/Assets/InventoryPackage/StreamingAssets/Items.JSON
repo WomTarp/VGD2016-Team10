@@ -79,8 +79,22 @@
   {
     "id": 11,
     "title": "Sheet Scrap #2",
-    "description": "Crumpled scrap of sheet music. The notation is faded.",
+    "description": "Another crumpled music sheet. You believe it to be a continuation of the first piece.",
     "usable": false,
     "slug": "sheet2"
+  },
+  {
+    "id": 12,
+    "title": "Shovel",
+    "description": "A sturdy shovel. It appears to have seen much use.",
+    "usable": false,
+    "slug": "shovel"
+  },
+  {
+    "id": 13,
+    "title": "Sheet Scrap #3",
+    "description": "Another old music sheet?",
+    "usable": false,
+    "slug": "sheet3"
   }
 ]

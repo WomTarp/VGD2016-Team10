@@ -22,7 +22,7 @@ public class GetItem : MonoBehaviour {
 	void Update () {
         if (waitForPress && Input.GetKeyDown(KeyCode.Z))
         {
-            inv.AddItem(itemGetValue);
+            if (itemGetValue != -1) inv.AddItem(itemGetValue);
             if (pickUpChangesScene) doChangeScene = true;
             if (destroyWhenActivated)
             {

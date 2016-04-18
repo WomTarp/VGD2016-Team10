@@ -35,11 +35,11 @@ public class PlatformScript : MonoBehaviour
         }
         if (co.name == "musicSheet1")        //loads to next level 
         {
-            StartCoroutine(ChangeLevel("Credits"));
+            StartCoroutine(ChangeLevel("Dialogue#3"));
         }
         if (co.name == "musicSheet2")        //loads to next level 
         {
-            StartCoroutine(ChangeLevel("Credits"));
+            StartCoroutine(ChangeLevel("Dialogue#4"));
         }
 
         if (co.tag == "notes")             //fills up determination

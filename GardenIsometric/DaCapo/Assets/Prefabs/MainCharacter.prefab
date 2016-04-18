@@ -32,6 +32,7 @@ GameObject:
   - 95: {fileID: 9590778}
   - 114: {fileID: 11484602}
   - 114: {fileID: 11409216}
+  - 114: {fileID: 11400068}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
@@ -46,7 +47,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.6, y: 1.66, z: 0}
+  m_LocalPosition: {x: 27.5, y: -7.3, z: 0}
   m_LocalScale: {x: 2.122353, y: 1.989734, z: 1}
   m_Children:
   - {fileID: 484520}
@@ -112,6 +113,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11400068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3408b5f40e1537743bdeefd9a76dff96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: 81f27f9ccc7f2e042a4fd6d6caefb425, type: 3}
+  fadeSpeed: 0.8
 --- !u!114 &11409216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -202,7 +216,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1487257671
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 65fb1b9b7dca51f4da31a4dc08cc0d71, type: 3}
+  m_Sprite: {fileID: 21300024, guid: 65fb1b9b7dca51f4da31a4dc08cc0d71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

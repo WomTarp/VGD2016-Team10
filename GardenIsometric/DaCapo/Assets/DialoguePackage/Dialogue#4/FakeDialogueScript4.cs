@@ -269,7 +269,7 @@ public class FakeDialogueScript4 : MonoBehaviour
 
         else if (pressCount == 37)
         {
-            SceneManager.LoadScene("Interior");
+            SceneManager.LoadScene("MazeScene");
         }
     }
 
