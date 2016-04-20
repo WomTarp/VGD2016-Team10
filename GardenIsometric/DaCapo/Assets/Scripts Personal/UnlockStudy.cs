@@ -8,6 +8,8 @@ public class UnlockStudy : MonoBehaviour {
     public int itemCheckValue;
     public Collider2D c1;
     public Collider2D c2;
+    public GameObject cross;
+    public GameObject arrow;
 
     public TextBoxManager tBox;
     public ActivateTextAtLine aBox;
@@ -27,6 +29,8 @@ public class UnlockStudy : MonoBehaviour {
         {
             c1.enabled = false;
             c2.enabled = false;
+            arrow.SetActive(true);
+            cross.SetActive(false);
             inv.removeItem(itemCheckValue);
         }
     }

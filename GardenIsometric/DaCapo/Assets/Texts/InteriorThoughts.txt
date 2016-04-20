@@ -74,10 +74,10 @@ Arnoux: Jeez, he can't even smile for a portrait with his own dog.
 Arnoux: A snapshot of the infinite cosmos in all of its majesty...
 Or something like that. 
 
-Arnoux: It seems he's working on sketches for some kind of new farming plot.
+Arnoux: This journal contains sketches for some kind of new farming plot.
 I guess he's been growing his own food.
-*(You search the drawers.)*
-Arnoux: Strange, there's nothing in here but these two notes.
+*(You check under the table.)*
+Arnoux: Strange, there's some notes taped under here.
 *(You got cipher note and coded note #1)*
 
 *(A strong box with a keypad lock.)*
