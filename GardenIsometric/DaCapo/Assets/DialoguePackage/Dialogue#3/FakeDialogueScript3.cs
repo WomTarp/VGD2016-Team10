@@ -24,6 +24,7 @@ public class FakeDialogueScript3 : MonoBehaviour
     public TextAsset line12;
     public TextAsset line13;
     public TextAsset line14;
+    public Animator anim;
     public Sprite patio;
     public Sprite arnouxUp;
     public int pressCount;
@@ -36,9 +37,11 @@ public class FakeDialogueScript3 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        anim = moreau.GetComponent<Animator>();
         pressCount = 0;
         background = background.GetComponent<Image>();
         lines = lines.GetComponent<Text>();
+        anim.SetBool("down", true);
         moreauBody = moreau.GetComponent<Rigidbody2D>();
         background.sprite = patio;
         lines.text = line0.ToString();
@@ -124,6 +127,9 @@ public class FakeDialogueScript3 : MonoBehaviour
         else if (pressCount == 13)
         {
             lines.text = line13.ToString();
+            anim.SetBool("up", true);
+            anim.SetBool("walkUp", true);
+            anim.SetBool("down", false);
             moreauBody.AddForce(Vector2.up * speed);
             isMoving = true;
             StartCoroutine(Wait(2, OnWaitFinished));

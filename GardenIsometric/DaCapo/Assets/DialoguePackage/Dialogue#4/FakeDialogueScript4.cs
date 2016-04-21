@@ -50,6 +50,7 @@ public class FakeDialogueScript4 : MonoBehaviour
     public Sprite arnouxUp;
     public int pressCount;
     public float speed;
+    public Animator anim;
     public Image arnoux;
     public GameObject moreau;
     private Rigidbody2D moreauBody;
@@ -59,6 +60,8 @@ public class FakeDialogueScript4 : MonoBehaviour
     void Start()
     {
         pressCount = 0;
+        anim = moreau.GetComponent<Animator>();
+        anim.SetBool("down", true);
         background = background.GetComponent<Image>();
         lines = lines.GetComponent<Text>();
         moreauBody = moreau.GetComponent<Rigidbody2D>();
@@ -161,6 +164,8 @@ public class FakeDialogueScript4 : MonoBehaviour
         else if (pressCount == 16)
         {
             lines.text = line15.ToString();
+            anim.SetBool("up", true);
+            anim.SetBool("down", false);
         }
 
         else if (pressCount == 17)
@@ -191,7 +196,9 @@ public class FakeDialogueScript4 : MonoBehaviour
 
         else if (pressCount == 22)
         {
-            lines.text = line21.ToString(); ;
+            lines.text = line21.ToString();
+            anim.SetBool("down", true);
+            anim.SetBool("up", false);
         }
 
         else if (pressCount == 23)
@@ -262,6 +269,9 @@ public class FakeDialogueScript4 : MonoBehaviour
         else if (pressCount == 36)
         {
             lines.text = line33.ToString();
+            anim.SetBool("up", true);
+            anim.SetBool("walkUp", true);
+            anim.SetBool("down", false);
             moreauBody.AddForce(Vector2.up * speed);
             isMoving = true;
             StartCoroutine(Wait(2, OnWaitFinished));

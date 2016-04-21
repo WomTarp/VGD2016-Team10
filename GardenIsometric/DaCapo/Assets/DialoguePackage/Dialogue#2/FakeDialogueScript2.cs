@@ -31,6 +31,7 @@ public class FakeDialogueScript2 : MonoBehaviour
     public int pressCount;
     public float speed;
     public Image arnoux;
+    public Animator anim;
     public GameObject moreau;
     private Rigidbody2D moreauBody;
     public bool isMoving;
@@ -41,6 +42,8 @@ public class FakeDialogueScript2 : MonoBehaviour
         pressCount = 0;
         background = background.GetComponent<Image>();
         lines = lines.GetComponent<Text>();
+        anim = moreau.GetComponent<Animator>();
+        anim.SetBool("right", true);
         moreauBody = moreau.GetComponent<Rigidbody2D>();
         background.sprite = foyerEmpty;
         lines.text = line0.ToString();
@@ -110,6 +113,9 @@ public class FakeDialogueScript2 : MonoBehaviour
 
         else if (pressCount == 10)
         {
+            anim.SetBool("right", false);
+            anim.SetBool("left", true);
+            anim.SetBool("walkLeft", true);
             moreauBody.AddForce(Vector2.left * speed);
             lines.text = line10.ToString();
             isMoving = true;
