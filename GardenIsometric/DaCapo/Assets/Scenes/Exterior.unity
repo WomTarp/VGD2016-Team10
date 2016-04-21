@@ -639,6 +639,7 @@ GameObject:
   - 60: {fileID: 486699243}
   - 114: {fileID: 486699245}
   - 50: {fileID: 486699244}
+  - 95: {fileID: 486699246}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -672,7 +673,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -40960461
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 07923b48e38e883479c507248a06affa, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 95c33b1ec33b1cd4eaf099c1137c807f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -756,6 +757,24 @@ MonoBehaviour:
   speed: 0.05
   tBox: {fileID: 0}
   addDescription: 0
+  anim: {fileID: 0}
+--- !u!95 &486699246
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486699240}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f44e0ebc0011e824e968b10f1022d916, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &592155172
 GameObject:
   m_ObjectHideFlags: 0
