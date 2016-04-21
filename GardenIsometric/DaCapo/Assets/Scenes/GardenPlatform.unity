@@ -608,6 +608,69 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6e580fe80416914d934dfeb199db2f6, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &537984710
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 438218, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 252
+      objectReference: {fileID: 0}
+    - target: {fileID: 438218, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 285.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 438218, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 438218, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 438218, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 438218, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 438218, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 438218, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231120, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 41c3632358447474fbefde64955549b0, type: 3}
+    m_RemovedComponents:
+    - {fileID: 11433022, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &537984711 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 167302, guid: 9ae281be425a69146909d097636bdd46, type: 2}
+  m_PrefabInternal: {fileID: 537984710}
+--- !u!114 &537984712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 537984711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858d44d9df86b4d4db06e3afa4672f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicPlayer: {fileID: 537984711}
 --- !u!1 &615149803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,10 +1575,6 @@ Prefab:
       propertyPath: m_Name
       value: GardenPlayer
       objectReference: {fileID: 0}
-    - target: {fileID: 5895316, guid: 15d40e4b2bea22f4aa0918c08b7c76d1, type: 2}
-      propertyPath: m_Radius
-      value: 2.1919384
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 15d40e4b2bea22f4aa0918c08b7c76d1, type: 2}
   m_IsPrefabParent: 0
@@ -1920,12 +1979,12 @@ EdgeCollider2D:
   - {x: 17.905725, y: -3.2158}
   - {x: 19.557362, y: -4.3479066}
   - {x: 21.440344, y: -5.594434}
-  - {x: 24.39396, y: -3.9418073}
-  - {x: 27.50662, y: -4.604804}
-  - {x: 28.97511, y: -6.0563135}
-  - {x: 31.139023, y: -4.7526517}
-  - {x: 35.09072, y: -5.38668}
-  - {x: 37.30041, y: -4.345497}
+  - {x: 23.65807, y: -3.6772456}
+  - {x: 27.065084, y: -3.9698563}
+  - {x: 29.073225, y: -5.209717}
+  - {x: 30.550306, y: -4.2235293}
+  - {x: 34.845417, y: -5.1750307}
+  - {x: 36.858875, y: -4.292584}
   - {x: 40.33225, y: -4.377869}
   - {x: 42.555054, y: -5.6595426}
   - {x: 44.19904, y: -4.1437263}
@@ -2236,25 +2295,33 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11419806, guid: 09a1ddebf309b874792528534d45c500, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11442564, guid: 09a1ddebf309b874792528534d45c500, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 11424272, guid: 09a1ddebf309b874792528534d45c500, type: 2}
       propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11451440, guid: 09a1ddebf309b874792528534d45c500, type: 2}
-      propertyPath: m_Text
-      value: 'Consonance:'
-      objectReference: {fileID: 0}
     - target: {fileID: 11480442, guid: 09a1ddebf309b874792528534d45c500, type: 2}
       propertyPath: m_Text
-      value: 'You lost consonance.
+      value: 'You have lost the tune.
 
-        Just mind your own business. Don''t bother him.'
+        Try again?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11451440, guid: 09a1ddebf309b874792528534d45c500, type: 2}
+      propertyPath: m_Text
+      value: Consonance
+      objectReference: {fileID: 0}
+    - target: {fileID: 11462724, guid: 09a1ddebf309b874792528534d45c500, type: 2}
+      propertyPath: m_Text
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489652, guid: 09a1ddebf309b874792528534d45c500, type: 2}
+      propertyPath: m_Text
+      value: Give up
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09a1ddebf309b874792528534d45c500, type: 2}

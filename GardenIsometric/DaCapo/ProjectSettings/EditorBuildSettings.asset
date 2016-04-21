@@ -39,3 +39,13 @@ EditorBuildSettings:
     path: Assets/DialoguePackage/Dialogue#3/Dialogue#3.unity
   - enabled: 1
     path: Assets/DialoguePackage/Dialogue#4/Dialogue#4.unity
+  - enabled: 1
+    path: Assets/Scenes/RearGarden.unity
+  - enabled: 1
+    path: Assets/Scenes/MazeScene.unity
+  - enabled: 1
+    path: Assets/VideoPackage/Cutscene#2.unity
+  - enabled: 1
+    path: Assets/VideoPackage/Cutscene#3.unity
+  - enabled: 1
+    path: Assets/VideoPackage/Cutscene#4.unity

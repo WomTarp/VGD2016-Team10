@@ -30,16 +30,16 @@ public class PlatformScript : MonoBehaviour
 
         if (co.name == "musicSheet0")        //loads to next level 
         {
-            StartCoroutine(ChangeLevel("Dialogue#2"));
+            StartCoroutine(ChangeLevel("Cutscene#2"));
             //UnityEngine.SceneManagement.SceneManager.LoadScene("Dialogue#2");
         }
         if (co.name == "musicSheet1")        //loads to next level 
         {
-            StartCoroutine(ChangeLevel("Dialogue#3"));
+            StartCoroutine(ChangeLevel("Cutscene#3"));
         }
         if (co.name == "musicSheet2")        //loads to next level 
         {
-            StartCoroutine(ChangeLevel("Dialogue#4"));
+            StartCoroutine(ChangeLevel("Cutscene#4"));
         }
 
         if (co.tag == "notes")             //fills up determination

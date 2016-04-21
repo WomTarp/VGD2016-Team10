@@ -136,7 +136,7 @@ public class FakeDialogueScript3 : MonoBehaviour
 
         else if (pressCount == 15)
         {
-            SceneManager.LoadScene("Interior");
+            SceneManager.LoadScene("RearGarden");
         }
     }
 

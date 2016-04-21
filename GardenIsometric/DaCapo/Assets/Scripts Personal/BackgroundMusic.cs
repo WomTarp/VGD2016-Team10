@@ -26,7 +26,7 @@ public class BackgroundMusic : MonoBehaviour {
 
     void OnLevelWasLoaded(int level)
     {
-        if (level == 2)
+        if (level == 8)
             Destroy(musicPlayer);
     }
 

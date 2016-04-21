@@ -105,7 +105,20 @@
     <Compile Include="Assets\Scripts Personal\TextBoxManager.cs" />
     <Compile Include="Assets\Scripts Personal\TextImporter.cs" />
     <Compile Include="Assets\Scripts Personal\UnlockStudy.cs" />
-    <Compile Include="Assets\VideoPackage\PlayVideo.cs" />
+    <Compile Include="Assets\Scripts Personal\accidentMusic.cs" />
+    <Compile Include="Assets\Scripts Personal\dialogue2InteriorMusic.cs" />
+    <Compile Include="Assets\Scripts Personal\gardenmusic.cs" />
+    <Compile Include="Assets\Scripts Personal\sheet1music.cs" />
+    <Compile Include="Assets\Scripts Personal\sheet2music.cs" />
+    <Compile Include="Assets\Scripts Personal\sheet3music.cs" />
+    <Compile Include="Assets\VideoPackage\Video Scripts\PlayCutscene2.cs" />
+    <Compile Include="Assets\VideoPackage\Video Scripts\PlayCutscene3.cs" />
+    <Compile Include="Assets\VideoPackage\Video Scripts\PlayCutscene4.cs" />
+    <Compile Include="Assets\VideoPackage\Video Scripts\PlayCutscene5.cs" />
+    <Compile Include="Assets\VideoPackage\Video Scripts\PlayVideo.cs" />
+    <Compile Include="Assets\VideoPackage\Video Scripts\cutscene1Music.cs" />
+    <Compile Include="Assets\VideoPackage\Video Scripts\cutsceneusic\cutscene2Music.cs" />
+    <Compile Include="Assets\VideoPackage\Video Scripts\cutsceneusic\cutscene3Music.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DialoguePackage\Dialogue#1\Dialogue1Lines\line1.txt" />

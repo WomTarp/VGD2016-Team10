@@ -139,7 +139,7 @@ MonoBehaviour:
   line12: {fileID: 4900000, guid: 6fae03628300fc343af55ea42d5b7426, type: 3}
   line13: {fileID: 4900000, guid: 9d5ff030fca5b7d4ea2206c0e971182d, type: 3}
   line14: {fileID: 4900000, guid: c24693f5e8b00184684072d678dbe1d6, type: 3}
-  patio: {fileID: 21300000, guid: 498f27b842c23ad4d9e7178d39c86685, type: 3}
+  patio: {fileID: 21300000, guid: e10529c93a83e2c44a1f0f1959e435b0, type: 3}
   arnouxUp: {fileID: 21300024, guid: 65fb1b9b7dca51f4da31a4dc08cc0d71, type: 3}
   pressCount: 0
   speed: 100
@@ -185,6 +185,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11491454, guid: 1dec1dfbb7c16a3419649b287731a286, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e10529c93a83e2c44a1f0f1959e435b0,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 11430324, guid: 1dec1dfbb7c16a3419649b287731a286, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1dec1dfbb7c16a3419649b287731a286, type: 2}
