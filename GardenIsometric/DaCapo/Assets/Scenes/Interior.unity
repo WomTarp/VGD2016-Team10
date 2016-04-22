@@ -3891,31 +3891,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22459662, guid: c45e39381b6ccc54d9403da867c65960, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22459662, guid: c45e39381b6ccc54d9403da867c65960, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22459662, guid: c45e39381b6ccc54d9403da867c65960, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22459662, guid: c45e39381b6ccc54d9403da867c65960, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22459662, guid: c45e39381b6ccc54d9403da867c65960, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 86
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22459662, guid: c45e39381b6ccc54d9403da867c65960, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22440934, guid: c45e39381b6ccc54d9403da867c65960, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c45e39381b6ccc54d9403da867c65960, type: 2}
@@ -4110,8 +4110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theText: {fileID: 4900000, guid: 2e82640b09c2ec34faecdcbdc94f55a9, type: 3}
-  startLine: 16
-  endLine: 17
+  startLine: 116
+  endLine: 117
   endLine2: 0
   tBox: {fileID: 0}
   continueText: 0
@@ -4957,7 +4957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4993d8b553181ec44872cf211eeb8044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theText: {fileID: 4900000, guid: 830d037d60545784f8eb89895b5143ac, type: 3}
+  theText: {fileID: 4900000, guid: 2e82640b09c2ec34faecdcbdc94f55a9, type: 3}
   startLine: 100
   endLine: 100
   endLine2: 0
