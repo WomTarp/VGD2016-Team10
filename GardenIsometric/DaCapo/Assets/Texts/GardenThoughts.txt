@@ -1,14 +1,14 @@
-// Leo - Truth --> Virgo - Truth
+// Leo - Liar --> Virgo - Truth
 (5,8) "Heed this old lion, the virgin speaks the truth."
 
-// Aquarius - Truth --> Leo - Truth
-(-3,4) "The fount of life says thus: listen to the words of the noble lion."
+// Aquarius - Truth --> Leo - Liar
+(6,3) "The fount of life says thus: the lion is trying to deceive you."
 
-// Virgo - Truth --> Taurus - Liar
-(5,0) "By my honor as a maiden, do not trust that bull."
+// Virgo - Liar --> Taurus - Truth
+(1,4) "By my honor as a maiden, the bull honors his word."
 
 // Taurus - Liar --> Aquarius - Liar
-(-3,6) "This bull will not mislead you: lies flow from her mouth as water in the stream."
+(8,2) "This bull will not mislead you: lies flow from her mouth as water in the stream."
 
 
 
@@ -19,10 +19,14 @@ Maybe I'll find something if I dig here.
 Arnoux: What's this?
 *(You got yet another scrap of music sheet.)*
 
-"Four statues, each with a tale to tell. One of them a liar, the others wish you well."
-"But each holds a piece of what you seek."
-"The sum of the truths minus the lie will make the answer clear to your eye."
+"Four statues, each with a tale to tell. Three of them liars, but one wishes you well."
 
 *(You pick up the shovel.)*
 *(There is a note attached to the shovel describing the garden in Cartesian coordinates.)*
 *(The origin appears to be in the bottom left.)*
+
+Arnoux: This must be where he keeps all of his farming tools.
+*(You try the door.)*
+Arnoux: Nope. Locked up tight.
+*(You peer through the window and see what appear to be a variety of farming-related items.)*
+Arnoux: *shrug* I probably don't need any of that stuff.

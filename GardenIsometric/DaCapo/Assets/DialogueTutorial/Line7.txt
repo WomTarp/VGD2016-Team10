@@ -1,1 +1,1 @@
-Dog: Keep pressing space to stay on the path! Woof!
+Dog: Keep clicking the mouse to stay on the path! Woof! Straying causes you to lose tempo!

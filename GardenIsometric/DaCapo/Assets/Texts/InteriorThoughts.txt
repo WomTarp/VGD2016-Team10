@@ -59,7 +59,7 @@ Love these guys.
 Wait a minute, it looks like there's a note wedged between these two books.
 *(You got coded note #2)*
 
-Arnoux: A big locked door with no handle. Well that's not suspicious at all...
+
 
 Arnoux: This painting depicts a dragon resting on a mountaintop.
 Cool stuff.
@@ -87,3 +87,51 @@ I think these notes I found might be the key to opening it.
 
 *(You peer into the chest and see another scrap of sheet music.)*
 *(You got another scrap of sheet music.)*
+
+Arnoux: A big locked door with no handle. Well that's not suspicious at all...
+Perhaps this key I found will open it.
+*(You try using the scorched key to open the door, but it doesn't fit.)*
+Arnoux: Maybe this key unlocks something else.
+
+Arnoux: A vase full of freshly picked flowers.
+They smell great.
+
+Arnoux: A potted fern. Very exciting.
+
+Arnoux: These vegetables look freshly picked and washed.
+
+Arnoux: Looks like a regular old cutting board and knife except...
+*(You look under the knife and notice two small spikes jutting out of the board.)*
+Arnoux: I wonder what those are for...
+
+Arnoux: Ceramic plates arranged in two neat little stacks.
+
+Arnoux: A gas-powered stove. Better not mess with it.
+
+Arnoux: A pair of stainless steel cooking pots. Although...
+*(On closer inspection, you notice that the pot with the lid has some sort of bizarre wire-frame and handle attached to it.)*
+Arnoux: Well that's weird.
+
+Arnoux: I could really go for some tea after all that walking through the woods, but it looks like the pot is empty.
+
+*(You make a face at yourself in the mirror.)*
+Arnoux: Well that felt good.
+
+Arnoux: This bed definitely looks cozy.
+
+Arnoux: The nightstand is jammed shut.
+
+Arnoux: Good thing I used the bathroom before I left today.
+
+Arnoux: A lovely flower painting. The pattern of the petals seems especially detailed.
+
+Arnoux: I don't think I have time to take a shower.
+
+Arnoux: Looks like most of the books on this desk involve rose cultivation techniques. Although...
+*(You notice that the open book on the desk is actually being held open by some kind of clasp mechanism.)*
+Arnoux: Interesting...
+
+Arnoux: There's a handful of crumpled balls of paper in here.
+*(You pickup and unfold one of them.)*
+Arnoux: It's a rough pencil sketch of a rose. Looks like he smudged part of it pretty badly though. Oh well.
+*(You return the sketch to the waste basket.)*
