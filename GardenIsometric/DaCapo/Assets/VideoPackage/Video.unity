@@ -128,6 +128,11 @@ Prefab:
       propertyPath: m_Name
       value: VidPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 11440950, guid: 378f1ff88fb7a6d449eaebdb7463edb4, type: 2}
+      propertyPath: movie
+      value: 
+      objectReference: {fileID: 15200000, guid: 6fe681d9b373e4c47a346ca42149b732,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 378f1ff88fb7a6d449eaebdb7463edb4, type: 2}
   m_IsPrefabParent: 0
