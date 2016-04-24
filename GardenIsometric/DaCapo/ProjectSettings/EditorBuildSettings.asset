@@ -49,3 +49,5 @@ EditorBuildSettings:
     path: Assets/VideoPackage/Cutscene#3.unity
   - enabled: 1
     path: Assets/VideoPackage/Cutscene#4.unity
+  - enabled: 1
+    path: Assets/Scenes/ActualMaze.unity
