@@ -43,7 +43,13 @@ public class Inventory : MonoBehaviour
             AddItemOnStart(1);
             AddItemOnStart(11);
             AddItemOnStart(13);
-        }            
+        }
+        if (SceneManager.GetActiveScene().name == "ActualMaze")
+        {
+            AddItemOnStart(1);
+            AddItemOnStart(11);
+            AddItemOnStart(13);
+        }
     }
 
     public void AddItem(int id)
