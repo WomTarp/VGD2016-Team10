@@ -85,6 +85,23 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1065560157 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 168032, guid: 378f1ff88fb7a6d449eaebdb7463edb4, type: 2}
+  m_PrefabInternal: {fileID: 1300124931}
+--- !u!114 &1065560159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1065560157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3408b5f40e1537743bdeefd9a76dff96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: 81f27f9ccc7f2e042a4fd6d6caefb425, type: 3}
+  fadeSpeed: 0.8
 --- !u!1001 &1300124931
 Prefab:
   m_ObjectHideFlags: 0
@@ -131,7 +148,7 @@ Prefab:
     - target: {fileID: 11440950, guid: 378f1ff88fb7a6d449eaebdb7463edb4, type: 2}
       propertyPath: movie
       value: 
-      objectReference: {fileID: 15200000, guid: 6fe681d9b373e4c47a346ca42149b732,
+      objectReference: {fileID: 15200000, guid: b24f38d215bc7a341aff81c5be57da74,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 378f1ff88fb7a6d449eaebdb7463edb4, type: 2}

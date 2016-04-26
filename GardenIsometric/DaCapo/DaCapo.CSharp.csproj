@@ -91,10 +91,13 @@
     <Compile Include="Assets\Scripts Personal\DoubleActivateTextAtLine.cs" />
     <Compile Include="Assets\Scripts Personal\DoubleGetItem.cs" />
     <Compile Include="Assets\Scripts Personal\Fading.cs" />
+    <Compile Include="Assets\Scripts Personal\FinalCutsceneMusic.cs" />
+    <Compile Include="Assets\Scripts Personal\FinalTransition.cs" />
     <Compile Include="Assets\Scripts Personal\GameManager.cs" />
     <Compile Include="Assets\Scripts Personal\GetItem.cs" />
     <Compile Include="Assets\Scripts Personal\GoInside.cs" />
     <Compile Include="Assets\Scripts Personal\KeyPad.cs" />
+    <Compile Include="Assets\Scripts Personal\MazeTransition.cs" />
     <Compile Include="Assets\Scripts Personal\MenuScript.cs" />
     <Compile Include="Assets\Scripts Personal\PickUpFade.cs" />
     <Compile Include="Assets\Scripts Personal\PlayerMovement.cs" />

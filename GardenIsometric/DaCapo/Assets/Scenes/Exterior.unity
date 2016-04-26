@@ -2195,11 +2195,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -66.92
+      value: -66.86
       objectReference: {fileID: 0}
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 15.66
+      value: 17.39
       objectReference: {fileID: 0}
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2223,7 +2223,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 474352, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11409216, guid: 3c48b9ca7aca5c64a88fb7ab99a405c1, type: 2}
       propertyPath: inventoryPanel
