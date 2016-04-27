@@ -1,5 +1,5 @@
 // Leo - Liar --> Virgo - Truth
-(5,8) "Heed this old lion, the virgin speaks the truth."
+(5,7) "Heed this old lion, the virgin speaks the truth."
 
 // Aquarius - Truth --> Leo - Liar
 (6,3) "The fount of life says thus: the lion is trying to deceive you."
@@ -8,7 +8,7 @@
 (1,4) "By my honor as a maiden, the bull honors his word."
 
 // Taurus - Liar --> Aquarius - Liar
-(8,2) "This bull will not mislead you: lies flow from her mouth as water in the stream."
+(7,2) "This bull will not mislead you: lies flow from her mouth as water in the stream."
 
 
 

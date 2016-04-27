@@ -14,6 +14,8 @@ public class ShowArrow : MonoBehaviour {
         {
             GetComponent<SpriteRenderer>().enabled = true;
         }
+        if (other.tag == "edge")
+            GetComponent<SpriteRenderer>().enabled = true;
     }
 
     void OnTriggerExit2D(Collider2D other)

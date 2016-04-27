@@ -86,7 +86,11 @@
     <Compile Include="Assets\Scripts Personal\BackgroundMusic.cs" />
     <Compile Include="Assets\Scripts Personal\CallInventory.cs" />
     <Compile Include="Assets\Scripts Personal\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts Personal\ChangeX.cs" />
+    <Compile Include="Assets\Scripts Personal\ChangeY.cs" />
+    <Compile Include="Assets\Scripts Personal\CheatScript.cs" />
     <Compile Include="Assets\Scripts Personal\CheckItem.cs" />
+    <Compile Include="Assets\Scripts Personal\Coordinates.cs" />
     <Compile Include="Assets\Scripts Personal\DogMove.cs" />
     <Compile Include="Assets\Scripts Personal\DoubleActivateTextAtLine.cs" />
     <Compile Include="Assets\Scripts Personal\DoubleGetItem.cs" />

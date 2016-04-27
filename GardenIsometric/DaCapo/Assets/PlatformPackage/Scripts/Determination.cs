@@ -24,7 +24,7 @@ public class Determination : MonoBehaviour
         if (co.tag == "edge")
         {   if (DeterminationSlider.value > 0)
             {
-                DeterminationSlider.value -= .005f;  //reduce determination
+                DeterminationSlider.value -= .0025f;  //reduce determination
             }
               
             else
