@@ -128,6 +128,32 @@ Prefab:
       propertyPath: m_Name
       value: FakeDialoguePrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 11407882, guid: 77370cd850d8b43409ba0b4ee050bd7a, type: 2}
+      propertyPath: m_Text
+      value: '(Press Z to interact with objects.)
+
+        (Press X to continue dialogue/close inventory.)
+
+        (Press C to open inventory)
+
+        (Use mouse hover to examine inventory.)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 22481652, guid: 77370cd850d8b43409ba0b4ee050bd7a, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.7500076
+      objectReference: {fileID: 0}
+    - target: {fileID: 22481652, guid: 77370cd850d8b43409ba0b4ee050bd7a, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 755.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22481652, guid: 77370cd850d8b43409ba0b4ee050bd7a, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 209
+      objectReference: {fileID: 0}
+    - target: {fileID: 22481652, guid: 77370cd850d8b43409ba0b4ee050bd7a, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.9999924
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77370cd850d8b43409ba0b4ee050bd7a, type: 2}
   m_IsPrefabParent: 0

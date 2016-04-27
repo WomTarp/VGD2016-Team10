@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/RearGarden.unity
+- path: Assets/DialoguePackage/Dialogue#1/Dialogue#1.unity
   isLoaded: 1
   isActive: 1
