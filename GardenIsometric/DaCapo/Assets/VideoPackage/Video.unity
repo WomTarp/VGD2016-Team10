@@ -148,7 +148,7 @@ Prefab:
     - target: {fileID: 11440950, guid: 378f1ff88fb7a6d449eaebdb7463edb4, type: 2}
       propertyPath: movie
       value: 
-      objectReference: {fileID: 15200000, guid: 65cb5af460473a347b934a18bcda38e5,
+      objectReference: {fileID: 15200000, guid: b24f38d215bc7a341aff81c5be57da74,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 378f1ff88fb7a6d449eaebdb7463edb4, type: 2}
